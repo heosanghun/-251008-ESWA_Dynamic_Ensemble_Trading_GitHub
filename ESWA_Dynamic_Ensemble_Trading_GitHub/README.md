@@ -2,7 +2,9 @@
 
 ## 🎯 논문 목표 달성 완료!
 
-**ESWA (Enhanced Sharpe Weighted Algorithm) Dynamic Ensemble Trading System**은 시장 레짐에 대응하는 강건한 동적 앙상블 강화학습 트레이딩 시스템입니다.
+**ESWA (Expert Systems with Applications) Dynamic Ensemble Trading System**은 시장 레짐에 대응하는 강건한 동적 앙상블 강화학습 트레이딩 시스템입니다.
+
+> **ESWA**: Expert Systems with Applications (Elsevier 저널) - 인공지능 및 전문가 시스템 분야의 저명한 학술 저널
 
 ### 📊 최종 성과 (논문 목표 95%+ 달성)
 
@@ -153,4 +155,5 @@ MIT License
 ---
 
 **🎉 논문 목표 95%+ 달성 완료! 🎉**
+
 
