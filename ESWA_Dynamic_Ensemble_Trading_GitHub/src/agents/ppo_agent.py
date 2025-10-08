@@ -8,7 +8,7 @@ Proximal Policy Optimization 기반 강화학습 에이전트
 - 5개 액션 공간 (Strong Buy, Buy, Hold, Sell, Strong Sell)
 - 체제별 전문화를 위한 맞춤형 보상함수 지원
 
-작성자: AI Assistant
+작성자: Sanghun HEO
 버전: 1.0.0
 날짜: 2025-09-04
 """
@@ -672,3 +672,4 @@ def create_multiple_ppo_agents(config: Dict, num_agents: int = 5,
         agent = create_ppo_agent(config, agent_id, device, seed)
         agents.append(agent)
     return agents
+
