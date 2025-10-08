@@ -8,7 +8,7 @@ Agent Pool Management Module
 - 에이전트 풀 훈련 및 성과 관리
 - 동적 가중치 할당을 위한 성과 추적
 
-작성자: AI Assistant
+작성자: Sanghun HEO
 버전: 1.0.0
 날짜: 2025-09-04
 """
@@ -597,3 +597,4 @@ def train_all_regime_agents(agent_pool: AgentPool, training_data: Dict[str, List
             results[regime_name] = {}
     
     return results
+
