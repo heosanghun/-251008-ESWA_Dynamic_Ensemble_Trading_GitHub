@@ -1,0 +1,143 @@
+{
+  "timestamp": "2025-10-08T03:51:09.607825",
+  "optimization_type": "simple_multi_objective_optimization",
+  "objectives": {
+    "sharpe_ratio": {
+      "target": 1.89,
+      "weight": 0.5,
+      "maximize": true
+    },
+    "total_return": {
+      "target": 0.079,
+      "weight": 0.3,
+      "maximize": true
+    },
+    "max_drawdown": {
+      "target": 0.162,
+      "weight": 0.2,
+      "maximize": false
+    }
+  },
+  "pareto_front": [
+    {
+      "individual": {
+        "max_position_size": 0.2488898689985945,
+        "max_drawdown_limit": 0.09702494539053505,
+        "volatility_target": 0.13988477138380806,
+        "confidence_threshold": 0.7361725166252899,
+        "learning_rate": 0.00021544905844978455,
+        "temperature": 7.369807475913937,
+        "evaluation_period": 13.728566139649727
+      },
+      "objectives": {
+        "sharpe_ratio": 0.04047258696678836,
+        "total_return": 0.01201859113242515,
+        "max_drawdown": -0.026689164975695123
+      },
+      "fitness": 0.25634725307931955
+    },
+    {
+      "individual": {
+        "max_position_size": 0.24838594892807064,
+        "max_drawdown_limit": 0.11257860882432129,
+        "volatility_target": 0.2130971426693838,
+        "confidence_threshold": 0.560816047473911,
+        "learning_rate": 0.00022512375523792461,
+        "temperature": 3.7421696658884933,
+        "evaluation_period": 28.667320090662784
+      },
+      "objectives": {
+        "sharpe_ratio": 0.04047258696678841,
+        "total_return": 0.011993164129027678,
+        "max_drawdown": -0.02663578663122039
+      },
+      "fitness": 0.25625069483856966
+    },
+    {
+      "individual": {
+        "max_position_size": 0.24607784182499648,
+        "max_drawdown_limit": 0.15864144726557217,
+        "volatility_target": 0.23551612231549318,
+        "confidence_threshold": 0.5035531390744483,
+        "learning_rate": 0.0002536033359098392,
+        "temperature": 9.131847538891073,
+        "evaluation_period": 23.430763395370285
+      },
+      "objectives": {
+        "sharpe_ratio": 0.04047258696678843,
+        "total_return": 0.011876758477836397,
+        "max_drawdown": -0.02639126367473999
+      },
+      "fitness": 0.2558086480618939
+    },
+    {
+      "individual": {
+        "max_position_size": 0.23082379212086862,
+        "max_drawdown_limit": 0.16281875842368904,
+        "volatility_target": 0.1101033844136394,
+        "confidence_threshold": 0.6434389111338301,
+        "learning_rate": 0.0004084392118536639,
+        "temperature": 13.179579702105613,
+        "evaluation_period": 20.339732664181327
+      },
+      "objectives": {
+        "sharpe_ratio": 0.04047258696678845,
+        "total_return": 0.011109825699114728,
+        "max_drawdown": -0.024773835381836674
+      },
+      "fitness": 0.252896245104723
+    },
+    {
+      "individual": {
+        "max_position_size": 0.1728545101228911,
+        "max_drawdown_limit": 0.0884215623936793,
+        "volatility_target": 0.1682734442696842,
+        "confidence_threshold": 0.7474995921072337,
+        "learning_rate": 0.0003711021253286991,
+        "temperature": 17.584824633150077,
+        "evaluation_period": 18.806897461005732
+      },
+      "objectives": {
+        "sharpe_ratio": 0.04047258696678847,
+        "total_return": 0.008232791585814414,
+        "max_drawdown": -0.018604959272433323
+      },
+      "fitness": 0.24197079910484842
+    },
+    {
+      "individual": {
+        "max_position_size": 0.0591062678228129,
+        "max_drawdown_limit": 0.05242104592879046,
+        "volatility_target": 0.09040422288607919,
+        "confidence_threshold": 0.9368432535073834,
+        "learning_rate": 0.00016918809764798117,
+        "temperature": 4.219771452970811,
+        "evaluation_period": 5.083911642141688
+      },
+      "objectives": {
+        "sharpe_ratio": 0.040472586966788494,
+        "total_return": 0.002757595280431485,
+        "max_drawdown": -0.006397446743301105
+      },
+      "fitness": 0.22117891440086263
+    }
+  ],
+  "best_solution": {
+    "individual": {
+      "max_position_size": 0.2488898689985945,
+      "max_drawdown_limit": 0.09702494539053505,
+      "volatility_target": 0.13988477138380806,
+      "confidence_threshold": 0.7361725166252899,
+      "learning_rate": 0.00021544905844978455,
+      "temperature": 7.369807475913937,
+      "evaluation_period": 13.728566139649727
+    },
+    "objectives": {
+      "sharpe_ratio": 0.04047258696678836,
+      "total_return": 0.01201859113242515,
+      "max_drawdown": -0.026689164975695123
+    },
+    "fitness": 0.25634725307931955
+  },
+  "n_trials": 200
+}

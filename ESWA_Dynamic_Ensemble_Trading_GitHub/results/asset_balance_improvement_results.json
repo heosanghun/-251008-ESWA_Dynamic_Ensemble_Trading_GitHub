@@ -1,0 +1,358 @@
+{
+  "timestamp": "2025-10-08T04:06:16.802743",
+  "improvement_type": "asset_balance_improvement",
+  "current_asset_performance": {
+    "ETH": 0.3483,
+    "MSFT": -0.0024,
+    "BTC": -0.053,
+    "AAPL": -0.072
+  },
+  "target_performance": 0.05,
+  "balanced_performance": {
+    "total_return": 0.0013141467728742375,
+    "sharpe_ratio": 0.0069370008938408195,
+    "max_drawdown": -0.006130898659140864,
+    "volatility": 0.021243138195138685,
+    "win_rate": 0.13393670309653916,
+    "asset_performance": {
+      "BTC": -0.0015949600575080325,
+      "ETH": 0.003670696007915142,
+      "AAPL": 0.00048641766754831117,
+      "MSFT": -0.002908013527278208
+    }
+  },
+  "improved_config": {
+    "data": {
+      "candlestick": {
+        "window_size": 60,
+        "resolution": [
+          224,
+          224
+        ]
+      },
+      "technical": {
+        "indicators": [
+          "SMA",
+          "EMA",
+          "RSI",
+          "MACD",
+          "BB",
+          "ATR",
+          "CCI",
+          "STOCH",
+          "ADX",
+          "OBV",
+          "VWAP",
+          "ROC",
+          "MFI",
+          "Williams_R",
+          "Parabolic_SAR"
+        ],
+        "lookback_periods": [
+          20,
+          50,
+          200
+        ]
+      },
+      "sentiment": {
+        "window_size": 24,
+        "update_frequency": "1h",
+        "sources": [
+          "newsapi",
+          "cointelegraph",
+          "coindesk"
+        ],
+        "api_keys": {
+          "newsapi": "YOUR_NEWSAPI_KEY",
+          "cointelegraph": "YOUR_COINTELEGRAPH_KEY",
+          "coindesk": "YOUR_COINDESK_KEY"
+        },
+        "positive_words": [
+          "buy",
+          "long",
+          "bullish",
+          "gain",
+          "profit",
+          "up",
+          "increase",
+          "strong"
+        ],
+        "negative_words": [
+          "sell",
+          "short",
+          "bearish",
+          "loss",
+          "down",
+          "decrease",
+          "weak"
+        ]
+      }
+    },
+    "regime": {
+      "classifier": {
+        "model_type": "xgboost",
+        "confidence_threshold": 0.7,
+        "n_estimators": 150,
+        "max_depth": 8,
+        "learning_rate": 0.05
+      },
+      "ema_periods": [
+        20,
+        50,
+        200
+      ]
+    },
+    "agents": {
+      "ppo": {
+        "learning_rate": 0.0002,
+        "batch_size": 512,
+        "n_steps": 4096,
+        "n_epochs": 15,
+        "gamma": 0.995,
+        "gae_lambda": 0.98,
+        "clip_range": 0.15,
+        "ent_coef": 0.005
+      },
+      "network": {
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.15
+      },
+      "pool": {
+        "agents_per_regime": 7,
+        "diversity_seeds": [
+          42,
+          123,
+          456,
+          789,
+          999,
+          111,
+          222
+        ]
+      }
+    },
+    "ensemble": {
+      "dynamic_weights": {
+        "evaluation_period": 20,
+        "temperature": 5,
+        "min_weight": 0.05
+      },
+      "method": "weighted_average"
+    },
+    "trading": {
+      "initial_capital": 10000,
+      "fees": {
+        "buy": 0.0003,
+        "sell": 0.0003
+      },
+      "slippage": {
+        "buy": 0.0001,
+        "sell": 0.0001
+      },
+      "max_position_per_trade": 0.12,
+      "max_total_position": 0.35
+    },
+    "backtesting": {
+      "initial_window_size": 300,
+      "expanding_window": true,
+      "validation_period": 20
+    },
+    "risk_management": {
+      "max_position_size": 0.12,
+      "max_total_exposure": 0.35,
+      "max_drawdown_limit": 0.1,
+      "max_var_limit": 0.03,
+      "max_correlation": 0.6,
+      "regime_specific": {
+        "bull_market": {
+          "position_multiplier": 0.9,
+          "risk_multiplier": 1.2
+        },
+        "bear_market": {
+          "position_multiplier": 0.3,
+          "risk_multiplier": 2.5
+        },
+        "sideways_market": {
+          "position_multiplier": 0.5,
+          "risk_multiplier": 2.0
+        }
+      },
+      "position_sizing": {
+        "base_size": 0.06,
+        "volatility_target": 0.12,
+        "max_volatility": 0.2,
+        "min_volatility": 0.05
+      },
+      "stop_loss": {
+        "max_drawdown_trigger": 0.08,
+        "var_trigger": 0.025,
+        "trailing_stop": 0.05,
+        "emergency_stop": 0.12
+      },
+      "take_profit": {
+        "profit_target": 0.15,
+        "trailing_profit": 0.08,
+        "partial_profit": 0.1
+      },
+      "risk_parity_weights": {
+        "BTC": 0.19212804641360678,
+        "ETH": 0.157154437328962,
+        "AAPL": 0.3453873651335901,
+        "MSFT": 0.3053301511238412
+      },
+      "volatility_target": 0.12,
+      "max_single_asset_risk": 0.3
+    },
+    "performance_monitoring": {
+      "interval": 30,
+      "history_length": 2000,
+      "alerts": {
+        "thresholds": {
+          "max_drawdown": 0.08,
+          "volatility": 0.25,
+          "sharpe_ratio": 0.8,
+          "daily_return": 0.03
+        }
+      },
+      "trend_analysis": {
+        "window": 20,
+        "prediction_horizon": 5
+      },
+      "regime_detection": {
+        "change_threshold": 0.4
+      }
+    },
+    "performance_analysis": {
+      "risk_free_rate": 0.03,
+      "confidence_level": 0.99,
+      "annualization_factor": 252,
+      "benchmark_return": 0.08,
+      "tracking_error_limit": 0.15
+    },
+    "hyperparameter_tuning": {
+      "method": "bayesian_optimization",
+      "n_iterations": 50,
+      "n_random_starts": 10,
+      "target_metric": "sharpe_ratio",
+      "param_space": {
+        "learning_rate": [
+          0.0001,
+          0.0005
+        ],
+        "batch_size": [
+          256,
+          1024
+        ],
+        "n_steps": [
+          2048,
+          8192
+        ],
+        "n_epochs": [
+          10,
+          20
+        ],
+        "gamma": [
+          0.99,
+          0.999
+        ],
+        "gae_lambda": [
+          0.9,
+          0.99
+        ],
+        "clip_range": [
+          0.1,
+          0.3
+        ],
+        "ent_coef": [
+          0.001,
+          0.01
+        ],
+        "confidence_threshold": [
+          0.6,
+          0.8
+        ],
+        "temperature": [
+          3,
+          10
+        ],
+        "evaluation_period": [
+          15,
+          30
+        ]
+      }
+    },
+    "asset_specific_strategies": {
+      "BTC": {
+        "position_size_multiplier": 0.8,
+        "confidence_threshold": 0.8,
+        "holding_period": "long",
+        "risk_tolerance": "low"
+      },
+      "ETH": {
+        "position_size_multiplier": 1.2,
+        "confidence_threshold": 0.6,
+        "holding_period": "short",
+        "risk_tolerance": "high"
+      },
+      "AAPL": {
+        "position_size_multiplier": 0.8,
+        "confidence_threshold": 0.8,
+        "holding_period": "long",
+        "risk_tolerance": "low"
+      },
+      "MSFT": {
+        "position_size_multiplier": 1.0,
+        "confidence_threshold": 0.7,
+        "holding_period": "medium",
+        "risk_tolerance": "medium"
+      }
+    },
+    "portfolio": {
+      "dynamic_weights": {
+        "ETH": 0.5444028581150051,
+        "MSFT": 0.1833957128274923,
+        "BTC": 0.13610071452875128,
+        "AAPL": 0.13610071452875128
+      },
+      "rebalancing_frequency": 3,
+      "performance_threshold": 0.05
+    },
+    "hedging": {
+      "enabled": true,
+      "hedging_pairs": [
+        [
+          "BTC",
+          "ETH",
+          0.5948687836529538
+        ],
+        [
+          "BTC",
+          "AAPL",
+          0.6821107778504569
+        ],
+        [
+          "AAPL",
+          "MSFT",
+          0.5156030210483533
+        ],
+        [
+          "MSFT",
+          "BTC",
+          0.5709875101569626
+        ]
+      ],
+      "hedge_ratio": 0.3,
+      "correlation_threshold": 0.5,
+      "rebalance_frequency": 7
+    }
+  },
+  "balance_metrics": {
+    "balance_score": 29.731789160858465,
+    "performance_std": 0.002484006180572382,
+    "performance_range": 0.00657870953519335
+  }
+}

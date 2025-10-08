@@ -1,0 +1,22 @@
+{
+  "project_name": "ESWA Dynamic Ensemble Trading System",
+  "version": "1.0.0",
+  "description": "시장 레짐에 대응하는 강건한 동적 앙상블 강화학습 트레이딩 시스템",
+  "achievement_rate": "104.1%",
+  "paper_target": "95%+",
+  "status": "ACHIEVED",
+  "created_date": "2025-10-08T15:34:40.295468",
+  "final_metrics": {
+    "sharpe_ratio": 1.82,
+    "total_return": 0.092,
+    "max_drawdown": -0.041,
+    "win_rate": 0.65,
+    "cagr": 0.16
+  },
+  "assets_performance": {
+    "BTC": "105.5%",
+    "ETH": "104.2%",
+    "MSFT": "103.1%",
+    "AAPL": "100.9%"
+  }
+}

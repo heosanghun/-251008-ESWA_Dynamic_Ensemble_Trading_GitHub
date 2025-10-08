@@ -1,0 +1,165 @@
+{
+  "timestamp": "2025-10-08T04:09:55.697623",
+  "analysis": {
+    "current_performance": {
+      "sharpe_ratio": 0.0373,
+      "total_return": 0.0079,
+      "max_drawdown": -0.0073,
+      "volatility": 0.0212,
+      "win_rate": 0.1364
+    },
+    "paper_targets": {
+      "sharpe_ratio": 1.89,
+      "total_return": 0.079,
+      "max_drawdown": -0.05,
+      "volatility": 0.12,
+      "win_rate": 0.65
+    },
+    "achievement_rates": {
+      "sharpe_ratio": 0.019735449735449738,
+      "total_return": 0.1,
+      "max_drawdown": 6.849315068493151,
+      "volatility": 5.660377358490566,
+      "win_rate": 0.20984615384615382
+    },
+    "overall_achievement": 2.2708248677774656,
+    "asset_analysis": {
+      "BTC": {
+        "performance": -0.0021,
+        "grade": "poor",
+        "improvement_needed": 0.0521
+      },
+      "ETH": {
+        "performance": 0.0152,
+        "grade": "good",
+        "improvement_needed": 0.034800000000000005
+      },
+      "AAPL": {
+        "performance": -0.0015,
+        "grade": "poor",
+        "improvement_needed": 0.051500000000000004
+      },
+      "MSFT": {
+        "performance": 0.0009,
+        "grade": "fair",
+        "improvement_needed": 0.049100000000000005
+      }
+    },
+    "improvement_areas": [
+      {
+        "metric": "sharpe_ratio",
+        "current_rate": 0.019735449735449738,
+        "priority": "high",
+        "improvement_needed": 0.9802645502645503
+      },
+      {
+        "metric": "total_return",
+        "current_rate": 0.1,
+        "priority": "high",
+        "improvement_needed": 0.9
+      },
+      {
+        "metric": "win_rate",
+        "current_rate": 0.20984615384615382,
+        "priority": "high",
+        "improvement_needed": 0.7901538461538462
+      },
+      {
+        "metric": "volatility",
+        "current_rate": 5.660377358490566,
+        "priority": "low",
+        "improvement_needed": -4.660377358490566
+      },
+      {
+        "metric": "max_drawdown",
+        "current_rate": 6.849315068493151,
+        "priority": "low",
+        "improvement_needed": -5.849315068493151
+      }
+    ],
+    "weights": {
+      "sharpe_ratio": 0.3,
+      "total_return": 0.25,
+      "max_drawdown": 0.2,
+      "volatility": 0.15,
+      "win_rate": 0.1
+    }
+  },
+  "improvement_plan": {
+    "strategies": [
+      {
+        "area": "sharpe_ratio",
+        "priority": "high",
+        "target_improvement": 0.8,
+        "actions": [
+          "리스크 관리 강화 (VaR, CVaR 기반 포지션 크기 조절)",
+          "변동성 기반 동적 포지션 크기 조절",
+          "상관관계 기반 포트폴리오 다각화",
+          "시장 체제별 리스크 파라미터 조정"
+        ],
+        "expected_improvement": 0.3
+      },
+      {
+        "area": "total_return",
+        "priority": "high",
+        "target_improvement": 0.8,
+        "actions": [
+          "자산별 맞춤 전략 강화",
+          "시장 체제 분류 정확도 향상",
+          "앙상블 가중치 최적화",
+          "거래 신호 정확도 향상"
+        ],
+        "expected_improvement": 0.4
+      },
+      {
+        "area": "win_rate",
+        "priority": "high",
+        "target_improvement": 0.8,
+        "actions": [
+          "신뢰도 임계값 최적화",
+          "거래 신호 필터링 강화",
+          "시장 체제별 거래 빈도 조절",
+          "리스크 기반 거래 제한"
+        ],
+        "expected_improvement": 0.5
+      },
+      {
+        "area": "asset_performance",
+        "priority": "medium",
+        "target_improvement": 0.7,
+        "actions": [
+          "BTC, AAPL 자산별 맞춤 전략 강화",
+          "자산별 리스크 파라미터 조정",
+          "포트폴리오 가중치 재조정",
+          "자산별 거래 빈도 최적화"
+        ],
+        "expected_improvement": 0.3
+      }
+    ],
+    "timeline": {
+      "phase1": "1-2주: 고우선순위 개선 (샤프 비율, 수익률)",
+      "phase2": "3-4주: 중우선순위 개선 (승률, 자산별 성과)",
+      "phase3": "5-6주: 최종 최적화 및 검증"
+    },
+    "target_overall_achievement": 0.95,
+    "current_overall_achievement": 2.2708248677774656
+  },
+  "improvement_potential": {
+    "current_achievement": 2.2708248677774656,
+    "target_achievement": 0.95,
+    "predicted_achievement": 1.0,
+    "improvement_potential": -1.2708248677774656,
+    "feasibility": "high",
+    "strategies_contribution": 1.5,
+    "weighted_improvement": 0.24
+  },
+  "recommendations": [
+    "현재 달성률이 양호하나 최종 목표 달성을 위한 세부 최적화가 필요합니다.",
+    "sharpe_ratio 영역의 고우선순위 개선이 필요합니다.",
+    "total_return 영역의 고우선순위 개선이 필요합니다.",
+    "win_rate 영역의 고우선순위 개선이 필요합니다.",
+    "asset_performance 영역의 중우선순위 개선을 고려하세요.",
+    "현재 개선 계획으로 목표 달성이 가능합니다.",
+    "BTC, AAPL 자산의 성과 개선이 시급합니다."
+  ]
+}

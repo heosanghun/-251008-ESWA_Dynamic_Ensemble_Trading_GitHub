@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-10-08T03:53:11.179828",
+  "optimization_type": "final_ensemble_optimization",
+  "ensemble_parameters": {
+    "volatility_target": 0.1611917564151424,
+    "max_drawdown_limit": 0.1251074836171605,
+    "temperature": 5.910942242774182,
+    "confidence_threshold": 0.6308517549875869,
+    "learning_rate": 0.00041158260153303857,
+    "evaluation_period": 20.767520241894918,
+    "max_position_size": 0.18966696069957834
+  },
+  "ensemble_performance": {
+    "sharpe_ratio": 0.04047258696678838,
+    "total_return": 0.009061110813686463,
+    "max_drawdown": -0.020397708298119394,
+    "volatility": 0.021243138195138685,
+    "win_rate": 0.49982923497267756
+  },
+  "achievement_rates": {
+    "sharpe_ratio": 2.1414067178194913,
+    "max_drawdown": 100.0,
+    "total_return": 11.46976052365375,
+    "overall": 33.364655463640496
+  },
+  "paper_targets": {
+    "sharpe_ratio": 1.89,
+    "max_drawdown": 0.162,
+    "bear_market_return": 0.079
+  },
+  "optimization_sources": {
+    "bayesian": {
+      "max_position_size": 0.25,
+      "max_drawdown_limit": 0.09,
+      "volatility_target": 0.16,
+      "confidence_threshold": 0.65,
+      "learning_rate": 0.00011736970999525803,
+      "batch_size": 256,
+      "n_epochs": 24,
+      "gamma": 0.992,
+      "gae_lambda": 0.91,
+      "clip_range": 0.2,
+      "ent_coef": 0.009674988425050116,
+      "temperature": 7.0,
+      "evaluation_period": 22,
+      "min_weight": 0.08,
+      "hidden_layers": [
+        128,
+        64
+      ],
+      "dropout": 0.25,
+      "activation": "tanh"
+    },
+    "rl": {
+      "max_position_size": "0.05",
+      "max_drawdown_limit": "0.2",
+      "volatility_target": "0.18408775",
+      "confidence_threshold": "0.5",
+      "learning_rate": "0.001",
+      "temperature": "3.0",
+      "evaluation_period": "26.163168"
+    },
+    "multi_objective": {
+      "max_position_size": 0.2488898689985945,
+      "max_drawdown_limit": 0.09702494539053505,
+      "volatility_target": 0.13988477138380806,
+      "confidence_threshold": 0.7361725166252899,
+      "learning_rate": 0.00021544905844978455,
+      "temperature": 7.369807475913937,
+      "evaluation_period": 13.728566139649727
+    }
+  }
+}

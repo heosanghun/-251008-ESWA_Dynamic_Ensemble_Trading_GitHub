@@ -1,0 +1,336 @@
+{
+  "timestamp": "2025-10-08T03:57:25.402353",
+  "improvement_type": "sharpe_ratio_improvement",
+  "current_sharpe": 0.0405,
+  "target_sharpe": 1.89,
+  "improvement_factor_needed": 46.666666666666664,
+  "current_performance": {
+    "sharpe_ratio": 0.0405,
+    "analysis": {
+      "asset_performance": {
+        "BTC": {
+          "total_return": -0.05298309805889456,
+          "volatility": 0.024932835535968072,
+          "sharpe_ratio": -0.11280960287107943,
+          "max_drawdown": -0.1288365066904289,
+          "win_rate": 0.4993169398907104
+        },
+        "ETH": {
+          "total_return": 0.34827252368348116,
+          "volatility": 0.03048146183139618,
+          "sharpe_ratio": 0.5777525386971617,
+          "max_drawdown": -0.0656144167935148,
+          "win_rate": 0.5084244080145719
+        },
+        "AAPL": {
+          "total_return": -0.07196886700585714,
+          "volatility": 0.013869346324306019,
+          "sharpe_ratio": -0.302052682836294,
+          "max_drawdown": -0.09532970149308252,
+          "win_rate": 0.4906648451730419
+        },
+        "MSFT": {
+          "total_return": -0.002415419525623408,
+          "volatility": 0.015688909088884463,
+          "sharpe_ratio": -0.000999905122634858,
+          "max_drawdown": -0.12366732988955406,
+          "win_rate": 0.5009107468123861
+        }
+      },
+      "overall_metrics": {
+        "avg_return": 0.05522628477327651,
+        "avg_volatility": 0.021243138195138685,
+        "avg_sharpe": 0.04047258696678835,
+        "avg_drawdown": -0.10336198871664506
+      },
+      "volatility_analysis": {},
+      "return_analysis": {}
+    }
+  },
+  "improved_performance": {
+    "sharpe_ratio": -0.06636859783283855,
+    "total_return": 0.00014798854282005447,
+    "max_drawdown": -0.0035477478429455757,
+    "volatility": 0.021243138195138685,
+    "win_rate": 0.07678734061930782
+  },
+  "improved_config": {
+    "data": {
+      "candlestick": {
+        "window_size": 60,
+        "resolution": [
+          224,
+          224
+        ]
+      },
+      "technical": {
+        "indicators": [
+          "SMA",
+          "EMA",
+          "RSI",
+          "MACD",
+          "BB",
+          "ATR",
+          "CCI",
+          "STOCH",
+          "ADX",
+          "OBV",
+          "VWAP",
+          "ROC",
+          "MFI",
+          "Williams_R",
+          "Parabolic_SAR"
+        ],
+        "lookback_periods": [
+          20,
+          50,
+          200
+        ]
+      },
+      "sentiment": {
+        "window_size": 24,
+        "update_frequency": "1h",
+        "sources": [
+          "newsapi",
+          "cointelegraph",
+          "coindesk"
+        ],
+        "api_keys": {
+          "newsapi": "YOUR_NEWSAPI_KEY",
+          "cointelegraph": "YOUR_COINTELEGRAPH_KEY",
+          "coindesk": "YOUR_COINDESK_KEY"
+        },
+        "positive_words": [
+          "buy",
+          "long",
+          "bullish",
+          "gain",
+          "profit",
+          "up",
+          "increase",
+          "strong"
+        ],
+        "negative_words": [
+          "sell",
+          "short",
+          "bearish",
+          "loss",
+          "down",
+          "decrease",
+          "weak"
+        ]
+      }
+    },
+    "regime": {
+      "classifier": {
+        "model_type": "xgboost",
+        "confidence_threshold": 0.84,
+        "n_estimators": 150,
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "min_holding_period": 5,
+        "max_trades_per_day": 2
+      },
+      "ema_periods": [
+        20,
+        50,
+        200
+      ]
+    },
+    "agents": {
+      "ppo": {
+        "learning_rate": 0.00016,
+        "batch_size": 512,
+        "n_steps": 4096,
+        "n_epochs": 15,
+        "gamma": 0.995,
+        "gae_lambda": 0.98,
+        "clip_range": 0.15,
+        "ent_coef": 0.005
+      },
+      "network": {
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.15
+      },
+      "pool": {
+        "agents_per_regime": 7,
+        "diversity_seeds": [
+          42,
+          123,
+          456,
+          789,
+          999,
+          111,
+          222
+        ]
+      }
+    },
+    "ensemble": {
+      "dynamic_weights": {
+        "evaluation_period": 30,
+        "temperature": 5.0,
+        "min_weight": 0.1
+      },
+      "method": "weighted_average"
+    },
+    "trading": {
+      "initial_capital": 10000,
+      "fees": {
+        "buy": 0.0003,
+        "sell": 0.0003
+      },
+      "slippage": {
+        "buy": 0.0001,
+        "sell": 0.0001
+      },
+      "max_position_per_trade": 0.12,
+      "max_total_position": 0.35
+    },
+    "backtesting": {
+      "initial_window_size": 300,
+      "expanding_window": true,
+      "validation_period": 20
+    },
+    "risk_management": {
+      "max_position_size": 0.08399999999999999,
+      "max_total_exposure": 0.35,
+      "max_drawdown_limit": 0.08,
+      "max_var_limit": 0.03,
+      "max_correlation": 0.6,
+      "regime_specific": {
+        "bull_market": {
+          "position_multiplier": 0.9,
+          "risk_multiplier": 1.2
+        },
+        "bear_market": {
+          "position_multiplier": 0.3,
+          "risk_multiplier": 2.5
+        },
+        "sideways_market": {
+          "position_multiplier": 0.5,
+          "risk_multiplier": 2.0
+        }
+      },
+      "position_sizing": {
+        "base_size": 0.06,
+        "volatility_target": 0.096,
+        "max_volatility": 0.2,
+        "min_volatility": 0.05
+      },
+      "stop_loss": {
+        "max_drawdown_trigger": 0.08,
+        "var_trigger": 0.025,
+        "trailing_stop": 0.05,
+        "emergency_stop": 0.12
+      },
+      "take_profit": {
+        "profit_target": 0.15,
+        "trailing_profit": 0.08,
+        "partial_profit": 0.1
+      },
+      "diversification": {
+        "max_single_asset_weight": 0.3,
+        "min_assets": 3,
+        "correlation_limit": 0.8
+      }
+    },
+    "performance_monitoring": {
+      "interval": 30,
+      "history_length": 2000,
+      "alerts": {
+        "thresholds": {
+          "max_drawdown": 0.08,
+          "volatility": 0.25,
+          "sharpe_ratio": 0.8,
+          "daily_return": 0.03
+        }
+      },
+      "trend_analysis": {
+        "window": 20,
+        "prediction_horizon": 5
+      },
+      "regime_detection": {
+        "change_threshold": 0.4
+      }
+    },
+    "performance_analysis": {
+      "risk_free_rate": 0.03,
+      "confidence_level": 0.99,
+      "annualization_factor": 252,
+      "benchmark_return": 0.08,
+      "tracking_error_limit": 0.15
+    },
+    "hyperparameter_tuning": {
+      "method": "bayesian_optimization",
+      "n_iterations": 50,
+      "n_random_starts": 10,
+      "target_metric": "sharpe_ratio",
+      "param_space": {
+        "learning_rate": [
+          0.0001,
+          0.0005
+        ],
+        "batch_size": [
+          256,
+          1024
+        ],
+        "n_steps": [
+          2048,
+          8192
+        ],
+        "n_epochs": [
+          10,
+          20
+        ],
+        "gamma": [
+          0.99,
+          0.999
+        ],
+        "gae_lambda": [
+          0.9,
+          0.99
+        ],
+        "clip_range": [
+          0.1,
+          0.3
+        ],
+        "ent_coef": [
+          0.001,
+          0.01
+        ],
+        "confidence_threshold": [
+          0.6,
+          0.8
+        ],
+        "temperature": [
+          3,
+          10
+        ],
+        "evaluation_period": [
+          15,
+          30
+        ]
+      }
+    },
+    "portfolio": {
+      "asset_weights": {
+        "BTC": 0.25,
+        "ETH": 0.25,
+        "AAPL": 0.25,
+        "MSFT": 0.25
+      },
+      "rebalancing_frequency": 7,
+      "correlation_threshold": 0.7
+    }
+  },
+  "improvement_metrics": {
+    "sharpe_improvement_factor": -1.6387308106873715,
+    "target_achievement_percentage": -3.5115660229015107,
+    "remaining_improvement_needed": 1.9563685978328385
+  }
+}

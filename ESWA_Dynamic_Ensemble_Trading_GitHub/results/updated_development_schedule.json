@@ -1,0 +1,289 @@
+{
+  "timeline": {
+    "current_date": "2025-10-08",
+    "total_duration_weeks": 6,
+    "expected_completion": "2025-11-19",
+    "phases": {
+      "phase1": {
+        "name": "Critical Issues Resolution",
+        "start_date": "2025-10-08",
+        "end_date": "2025-10-22",
+        "duration_weeks": 2,
+        "tasks": [
+          {
+            "task": "리스크 관리 시스템 고도화",
+            "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+            "start_date": "2025-10-08 00:00:00",
+            "duration_days": 3,
+            "priority": "critical",
+            "expected_improvement": 0.5,
+            "status": "ready_to_start"
+          },
+          {
+            "task": "변동성 기반 포지션 크기 조절",
+            "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+            "start_date": "2025-10-11 00:00:00",
+            "duration_days": 3,
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "status": "pending"
+          },
+          {
+            "task": "시장 체제 분류 정확도 향상",
+            "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+            "start_date": "2025-10-14 00:00:00",
+            "duration_days": 4,
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "status": "pending"
+          },
+          {
+            "task": "앙상블 가중치 최적화",
+            "description": "동적 가중치 할당 알고리즘 개선",
+            "start_date": "2025-10-18 00:00:00",
+            "duration_days": 3,
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "status": "pending"
+          },
+          {
+            "task": "신뢰도 임계값 최적화",
+            "description": "동적 신뢰도 임계값 조절 시스템 구현",
+            "start_date": "2025-10-21 00:00:00",
+            "duration_days": 3,
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "status": "pending"
+          },
+          {
+            "task": "거래 신호 필터링 강화",
+            "description": "다중 조건 기반 거래 신호 필터링",
+            "start_date": "2025-10-24 00:00:00",
+            "duration_days": 4,
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "status": "pending"
+          }
+        ],
+        "expected_improvement": 2.2,
+        "status": "in_progress"
+      },
+      "phase2": {
+        "name": "High Priority Improvements",
+        "start_date": "2025-10-22",
+        "end_date": "2025-11-05",
+        "duration_weeks": 2,
+        "tasks": [
+          {
+            "task": "BTC 자산별 맞춤 전략 강화",
+            "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+            "start_date": "2025-10-22 00:00:00",
+            "duration_days": 4,
+            "priority": "high",
+            "expected_improvement": 0.3,
+            "status": "pending"
+          },
+          {
+            "task": "AAPL 자산별 맞춤 전략 강화",
+            "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+            "start_date": "2025-10-26 00:00:00",
+            "duration_days": 4,
+            "priority": "high",
+            "expected_improvement": 0.3,
+            "status": "pending"
+          }
+        ],
+        "expected_improvement": 0.6,
+        "status": "pending"
+      },
+      "phase3": {
+        "name": "Optimization & Validation",
+        "start_date": "2025-11-05",
+        "end_date": "2025-11-19",
+        "duration_weeks": 2,
+        "tasks": [
+          {
+            "task": "고급 최적화 알고리즘 구현",
+            "description": "NSGA-II, MOEA/D 등 다중목표 최적화 알고리즘 적용",
+            "start_date": "2025-11-05 00:00:00",
+            "duration_days": 7,
+            "priority": "medium",
+            "expected_improvement": 0.15,
+            "status": "pending"
+          },
+          {
+            "task": "실시간 모니터링 시스템 구축",
+            "description": "성과 모니터링, 이상 탐지, 자동 알림 시스템",
+            "start_date": "2025-11-12 00:00:00",
+            "duration_days": 5,
+            "priority": "medium",
+            "expected_improvement": 0.1,
+            "status": "pending"
+          },
+          {
+            "task": "최종 성과 검증 및 튜닝",
+            "description": "6개월 확장 검증 및 미세 조정",
+            "start_date": "2025-11-17 00:00:00",
+            "duration_days": 4,
+            "priority": "medium",
+            "expected_improvement": 0.1,
+            "status": "pending"
+          }
+        ],
+        "expected_improvement": 0.35,
+        "status": "pending"
+      }
+    }
+  },
+  "current_status": {
+    "current_date": "2025-10-08",
+    "overall_progress": 0.0,
+    "phase_status": {
+      "phase1": {
+        "status": "in_progress",
+        "progress": 0.0,
+        "completed_tasks": 0,
+        "total_tasks": 6,
+        "start_date": "2025-10-08",
+        "end_date": "2025-10-22"
+      },
+      "phase2": {
+        "status": "not_started",
+        "progress": 0.0,
+        "completed_tasks": 0,
+        "total_tasks": 2,
+        "start_date": "2025-10-22",
+        "end_date": "2025-11-05"
+      },
+      "phase3": {
+        "status": "not_started",
+        "progress": 0.0,
+        "completed_tasks": 0,
+        "total_tasks": 3,
+        "start_date": "2025-11-05",
+        "end_date": "2025-11-19"
+      }
+    },
+    "next_tasks": [
+      {
+        "phase": "phase1",
+        "task": "리스크 관리 시스템 고도화",
+        "start_date": "2025-10-08",
+        "end_date": "2025-10-11",
+        "progress_days": 0,
+        "total_days": 3
+      },
+      {
+        "phase": "phase1",
+        "task": "변동성 기반 포지션 크기 조절",
+        "start_date": "2025-10-11",
+        "end_date": "2025-10-14",
+        "status": "pending"
+      },
+      {
+        "phase": "phase1",
+        "task": "시장 체제 분류 정확도 향상",
+        "start_date": "2025-10-14",
+        "end_date": "2025-10-18",
+        "status": "pending"
+      },
+      {
+        "phase": "phase1",
+        "task": "앙상블 가중치 최적화",
+        "start_date": "2025-10-18",
+        "end_date": "2025-10-21",
+        "status": "pending"
+      },
+      {
+        "phase": "phase1",
+        "task": "신뢰도 임계값 최적화",
+        "start_date": "2025-10-21",
+        "end_date": "2025-10-24",
+        "status": "pending"
+      },
+      {
+        "phase": "phase1",
+        "task": "거래 신호 필터링 강화",
+        "start_date": "2025-10-24",
+        "end_date": "2025-10-28",
+        "status": "pending"
+      },
+      {
+        "phase": "phase2",
+        "task": "BTC 자산별 맞춤 전략 강화",
+        "start_date": "2025-10-22",
+        "end_date": "2025-10-26",
+        "status": "pending"
+      },
+      {
+        "phase": "phase2",
+        "task": "AAPL 자산별 맞춤 전략 강화",
+        "start_date": "2025-10-26",
+        "end_date": "2025-10-30",
+        "status": "pending"
+      },
+      {
+        "phase": "phase3",
+        "task": "고급 최적화 알고리즘 구현",
+        "start_date": "2025-11-05",
+        "end_date": "2025-11-12",
+        "status": "pending"
+      },
+      {
+        "phase": "phase3",
+        "task": "실시간 모니터링 시스템 구축",
+        "start_date": "2025-11-12",
+        "end_date": "2025-11-17",
+        "status": "pending"
+      },
+      {
+        "phase": "phase3",
+        "task": "최종 성과 검증 및 튜닝",
+        "start_date": "2025-11-17",
+        "end_date": "2025-11-21",
+        "status": "pending"
+      }
+    ],
+    "overdue_tasks": [],
+    "completed_tasks": []
+  },
+  "daily_plan": {
+    "date": "2025-10-08",
+    "today_tasks": [
+      {
+        "phase": "phase1",
+        "task": "리스크 관리 시스템 고도화",
+        "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+        "priority": "critical",
+        "duration_days": 3,
+        "expected_improvement": 0.5,
+        "status": "start_today"
+      }
+    ],
+    "this_week_tasks": [
+      {
+        "phase": "phase1",
+        "task": "변동성 기반 포지션 크기 조절",
+        "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+        "priority": "critical",
+        "start_date": "2025-10-11",
+        "end_date": "2025-10-14",
+        "expected_improvement": 0.3,
+        "status": "this_week"
+      },
+      {
+        "phase": "phase1",
+        "task": "시장 체제 분류 정확도 향상",
+        "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+        "priority": "critical",
+        "start_date": "2025-10-14",
+        "end_date": "2025-10-18",
+        "expected_improvement": 0.4,
+        "status": "this_week"
+      }
+    ],
+    "priority_focus": "Critical Issues 해결",
+    "expected_daily_improvement": 0.5
+  },
+  "generated_at": "2025-10-08T04:20:57.081778"
+}

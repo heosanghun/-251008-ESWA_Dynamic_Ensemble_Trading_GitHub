@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-10-08T04:08:05.439565",
+  "validation_type": "balanced_system_validation",
+  "balanced_performance": {
+    "total_return": 0.007939787194712777,
+    "sharpe_ratio": 0.03734748937144666,
+    "max_drawdown": -0.007324814702782393,
+    "volatility": 0.021243138195138685,
+    "win_rate": 0.1364412568306011,
+    "asset_performance": {
+      "BTC": -0.002070375647360123,
+      "ETH": 0.01517313008514698,
+      "AAPL": -0.001487486989518838,
+      "MSFT": 0.0008927114726851038
+    }
+  },
+  "achievement_rates": {
+    "individual_rates": {
+      "sharpe_ratio": 0.019760576387008816,
+      "total_return": 0.10050363537611111,
+      "max_drawdown": 1.0,
+      "volatility": 1.0,
+      "win_rate": 0.20990962589323245
+    },
+    "overall_rate": 0.4020450443494537,
+    "weights": {
+      "sharpe_ratio": 0.3,
+      "total_return": 0.25,
+      "max_drawdown": 0.2,
+      "volatility": 0.15,
+      "win_rate": 0.1
+    }
+  },
+  "balance_quality": {
+    "balance_score": -1.2522702874266178,
+    "performance_std": 0.007042859842558166,
+    "performance_range": 0.017243505732507103,
+    "balance_quality": "poor"
+  },
+  "validation_timestamp": "2025-10-08T04:08:05.439493"
+}

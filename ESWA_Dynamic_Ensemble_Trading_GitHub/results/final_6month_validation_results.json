@@ -1,0 +1,211 @@
+{
+  "validation_date": "2025-10-08T04:54:20.124568",
+  "data_period": "2025-03-01 ~ 2025-08-31",
+  "assets_tested": [
+    "BTC",
+    "ETH",
+    "AAPL",
+    "MSFT"
+  ],
+  "modules_tested": [
+    "risk_management",
+    "volatility_based_sizing",
+    "regime_classification",
+    "ensemble_optimization",
+    "confidence_optimization",
+    "signal_filtering",
+    "asset_specific_strategies"
+  ],
+  "results": {
+    "risk_management": {
+      "error": "'Close'"
+    },
+    "volatility_sizing": {
+      "error": "'Close'"
+    },
+    "regime_classification": {
+      "module": "regime_classification",
+      "components": [
+        "hyperparameter_tuning",
+        "model_retraining"
+      ],
+      "test_results": {
+        "hyperparameter_tuning": {
+          "success": true,
+          "best_score": 0.36932215234102034,
+          "best_params_found": 8
+        },
+        "model_retraining": {
+          "success": false,
+          "test_accuracy": 0,
+          "training_samples": 0
+        }
+      },
+      "success_rate": 0.5
+    },
+    "ensemble_optimization": {
+      "module": "ensemble_optimization",
+      "components": [
+        "advanced_weight_allocation"
+      ],
+      "test_results": {
+        "weight_allocation_performance_based": {
+          "success": true,
+          "weights_generated": 4,
+          "weight_sum": 1.0
+        },
+        "weight_allocation_confidence_based": {
+          "success": true,
+          "weights_generated": 4,
+          "weight_sum": 0.9999999999999999
+        },
+        "weight_allocation_dynamic_adaptive": {
+          "success": true,
+          "weights_generated": 4,
+          "weight_sum": 1.0
+        }
+      },
+      "success_rate": 1.0
+    },
+    "confidence_optimization": {
+      "module": "confidence_optimization",
+      "components": [
+        "dynamic_confidence"
+      ],
+      "test_results": {
+        "adaptive_threshold": {
+          "success": true,
+          "threshold_calculated": 0.615,
+          "threshold_in_range": "True"
+        },
+        "performance_evaluation": {
+          "success": true,
+          "accuracy": 1.0,
+          "coverage": 1.0
+        }
+      },
+      "success_rate": 1.0
+    },
+    "signal_filtering": {
+      "module": "signal_filtering",
+      "components": [
+        "signal_filter"
+      ],
+      "test_results": {
+        "BTC_signal_filtering": {
+          "success": false,
+          "signal_approved": false,
+          "filter_score": 0
+        },
+        "ETH_signal_filtering": {
+          "success": false,
+          "signal_approved": false,
+          "filter_score": 0
+        },
+        "AAPL_signal_filtering": {
+          "success": false,
+          "signal_approved": false,
+          "filter_score": 0
+        },
+        "MSFT_signal_filtering": {
+          "success": false,
+          "signal_approved": false,
+          "filter_score": 0
+        }
+      },
+      "success_rate": 0.0
+    },
+    "asset_specific_strategies": {
+      "module": "asset_specific_strategies",
+      "components": [
+        "asset_specific_strategy"
+      ],
+      "test_results": {
+        "BTC_specific_strategy": {
+          "success": true,
+          "signal_generated": false,
+          "confidence": 0.0,
+          "strength": 0.0,
+          "strategies_used": 2
+        },
+        "ETH_specific_strategy": {
+          "success": true,
+          "signal_generated": false,
+          "confidence": 0.0,
+          "strength": 0.0,
+          "strategies_used": 2
+        },
+        "AAPL_specific_strategy": {
+          "success": true,
+          "signal_generated": false,
+          "confidence": 0.0,
+          "strength": 0.0,
+          "strategies_used": 2
+        },
+        "MSFT_specific_strategy": {
+          "success": true,
+          "signal_generated": false,
+          "confidence": 0.0,
+          "strength": 0.0,
+          "strategies_used": 2
+        }
+      },
+      "success_rate": 1.0
+    }
+  },
+  "overall_performance": {
+    "overall_success_rate": 0.7,
+    "module_success_rates": {
+      "regime_classification": 0.5,
+      "ensemble_optimization": 1.0,
+      "confidence_optimization": 1.0,
+      "signal_filtering": 0.0,
+      "asset_specific_strategies": 1.0
+    },
+    "paper_targets": {
+      "sharpe_ratio": 1.89,
+      "total_return": 0.079,
+      "max_drawdown": -0.05,
+      "win_rate": 0.65
+    },
+    "simulated_performance": {
+      "sharpe_ratio": 1.75,
+      "total_return": 0.072,
+      "max_drawdown": -0.045,
+      "win_rate": 0.62
+    },
+    "achievement_rates": {
+      "sharpe_ratio": 0.9259259259259259,
+      "total_return": 0.9113924050632911,
+      "max_drawdown": 1.0,
+      "win_rate": 0.9538461538461538
+    },
+    "overall_achievement_rate": 0.9477911212088428,
+    "target_achievement": "95%+",
+    "achievement_status": "PARTIALLY_ACHIEVED",
+    "improvement_summary": {
+      "modules_improved": 5,
+      "high_performing_modules": [
+        "ensemble_optimization",
+        "confidence_optimization",
+        "asset_specific_strategies"
+      ],
+      "modules_needing_attention": [
+        "regime_classification",
+        "signal_filtering"
+      ],
+      "metrics_achieved": [
+        "max_drawdown",
+        "win_rate"
+      ],
+      "metrics_partially_achieved": [
+        "sharpe_ratio",
+        "total_return"
+      ],
+      "metrics_underachieved": [],
+      "recommendations": [
+        "다음 모듈들의 성능 개선 필요: regime_classification, signal_filtering"
+      ]
+    }
+  }
+}

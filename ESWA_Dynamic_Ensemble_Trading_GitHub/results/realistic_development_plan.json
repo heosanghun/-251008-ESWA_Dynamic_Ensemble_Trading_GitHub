@@ -1,0 +1,372 @@
+{
+  "timeline": {
+    "current_date": "2025-10-08",
+    "development_phase": {
+      "start_time": "2025-10-08 00:00",
+      "end_time": "2025-10-08 08:00",
+      "duration_hours": 8,
+      "tasks": [
+        {
+          "task": "리스크 관리 시스템 고도화",
+          "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+          "start_time": "2025-10-08 00:00:00",
+          "duration_hours": 2,
+          "priority": "critical",
+          "expected_improvement": 0.5,
+          "files_to_create": [
+            "src/risk/var_calculator.py",
+            "src/risk/cvar_calculator.py",
+            "src/risk/dynamic_position_sizing.py"
+          ]
+        },
+        {
+          "task": "변동성 기반 포지션 크기 조절",
+          "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+          "start_time": "2025-10-08 02:00:00",
+          "duration_hours": 1.5,
+          "priority": "critical",
+          "expected_improvement": 0.3,
+          "files_to_create": [
+            "src/risk/volatility_calculator.py",
+            "src/risk/volatility_based_sizing.py"
+          ]
+        },
+        {
+          "task": "시장 체제 분류 정확도 향상",
+          "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+          "start_time": "2025-10-08 03:30:00",
+          "duration_hours": 2,
+          "priority": "critical",
+          "expected_improvement": 0.4,
+          "files_to_create": [
+            "src/regime/hyperparameter_tuning.py",
+            "src/regime/model_retraining.py"
+          ]
+        },
+        {
+          "task": "앙상블 가중치 최적화",
+          "description": "동적 가중치 할당 알고리즘 개선",
+          "start_time": "2025-10-08 05:30:00",
+          "duration_hours": 1,
+          "priority": "critical",
+          "expected_improvement": 0.3,
+          "files_to_create": [
+            "src/ensemble/advanced_weight_allocation.py"
+          ]
+        },
+        {
+          "task": "신뢰도 임계값 최적화",
+          "description": "동적 신뢰도 임계값 조절 시스템 구현",
+          "start_time": "2025-10-08 06:30:00",
+          "duration_hours": 1,
+          "priority": "critical",
+          "expected_improvement": 0.4,
+          "files_to_create": [
+            "src/regime/dynamic_confidence.py"
+          ]
+        },
+        {
+          "task": "거래 신호 필터링 강화",
+          "description": "다중 조건 기반 거래 신호 필터링",
+          "start_time": "2025-10-08 07:30:00",
+          "duration_hours": 0.5,
+          "priority": "critical",
+          "expected_improvement": 0.3,
+          "files_to_create": [
+            "src/trading/signal_filtering.py"
+          ]
+        },
+        {
+          "task": "BTC 자산별 맞춤 전략 강화",
+          "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+          "start_time": "2025-10-08 01:00:00",
+          "duration_hours": 1,
+          "priority": "high",
+          "expected_improvement": 0.3,
+          "files_to_create": [
+            "src/trading/asset_specific_strategies.py"
+          ]
+        },
+        {
+          "task": "AAPL 자산별 맞춤 전략 강화",
+          "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+          "start_time": "2025-10-08 02:00:00",
+          "duration_hours": 1,
+          "priority": "high",
+          "expected_improvement": 0.3,
+          "files_to_create": [
+            "src/trading/asset_specific_strategies.py"
+          ]
+        }
+      ]
+    },
+    "validation_phase": {
+      "start_time": "2025-10-08 08:00",
+      "end_time": "2025-10-08 09:00",
+      "duration_hours": 1,
+      "data_period": "2025-03-01 ~ 2025-08-31",
+      "tasks": [
+        {
+          "task": "6개월 과거 데이터 검증",
+          "description": "2025년 3월~8월 데이터로 성과 검증",
+          "start_time": "2025-10-08 08:00:00",
+          "duration_hours": 1,
+          "priority": "high",
+          "data_period": "2025-03-01 ~ 2025-08-31",
+          "expected_results": {
+            "sharpe_ratio": 1.89,
+            "total_return": 0.079,
+            "max_drawdown": -0.05,
+            "win_rate": 0.65
+          }
+        }
+      ]
+    },
+    "total_completion_time": "2025-10-08 09:00",
+    "expected_improvement": 2.8
+  },
+  "development_schedule": {
+    "date": "2025-10-08",
+    "total_duration_hours": 8,
+    "hourly_schedule": {
+      "hour_1": {
+        "time_range": "00:00 ~ 01:00",
+        "tasks": [
+          {
+            "task": "리스크 관리 시스템 고도화",
+            "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+            "priority": "critical",
+            "expected_improvement": 0.5,
+            "files_to_create": [
+              "src/risk/var_calculator.py",
+              "src/risk/cvar_calculator.py",
+              "src/risk/dynamic_position_sizing.py"
+            ]
+          }
+        ]
+      },
+      "hour_2": {
+        "time_range": "01:00 ~ 02:00",
+        "tasks": [
+          {
+            "task": "리스크 관리 시스템 고도화",
+            "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+            "priority": "critical",
+            "expected_improvement": 0.5,
+            "files_to_create": [
+              "src/risk/var_calculator.py",
+              "src/risk/cvar_calculator.py",
+              "src/risk/dynamic_position_sizing.py"
+            ]
+          },
+          {
+            "task": "BTC 자산별 맞춤 전략 강화",
+            "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+            "priority": "high",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/trading/asset_specific_strategies.py"
+            ]
+          }
+        ]
+      },
+      "hour_3": {
+        "time_range": "02:00 ~ 03:00",
+        "tasks": [
+          {
+            "task": "변동성 기반 포지션 크기 조절",
+            "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/risk/volatility_calculator.py",
+              "src/risk/volatility_based_sizing.py"
+            ]
+          },
+          {
+            "task": "AAPL 자산별 맞춤 전략 강화",
+            "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+            "priority": "high",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/trading/asset_specific_strategies.py"
+            ]
+          }
+        ]
+      },
+      "hour_4": {
+        "time_range": "03:00 ~ 04:00",
+        "tasks": [
+          {
+            "task": "변동성 기반 포지션 크기 조절",
+            "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/risk/volatility_calculator.py",
+              "src/risk/volatility_based_sizing.py"
+            ]
+          },
+          {
+            "task": "시장 체제 분류 정확도 향상",
+            "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "files_to_create": [
+              "src/regime/hyperparameter_tuning.py",
+              "src/regime/model_retraining.py"
+            ]
+          }
+        ]
+      },
+      "hour_5": {
+        "time_range": "04:00 ~ 05:00",
+        "tasks": [
+          {
+            "task": "시장 체제 분류 정확도 향상",
+            "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "files_to_create": [
+              "src/regime/hyperparameter_tuning.py",
+              "src/regime/model_retraining.py"
+            ]
+          }
+        ]
+      },
+      "hour_6": {
+        "time_range": "05:00 ~ 06:00",
+        "tasks": [
+          {
+            "task": "시장 체제 분류 정확도 향상",
+            "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "files_to_create": [
+              "src/regime/hyperparameter_tuning.py",
+              "src/regime/model_retraining.py"
+            ]
+          },
+          {
+            "task": "앙상블 가중치 최적화",
+            "description": "동적 가중치 할당 알고리즘 개선",
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/ensemble/advanced_weight_allocation.py"
+            ]
+          }
+        ]
+      },
+      "hour_7": {
+        "time_range": "06:00 ~ 07:00",
+        "tasks": [
+          {
+            "task": "앙상블 가중치 최적화",
+            "description": "동적 가중치 할당 알고리즘 개선",
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/ensemble/advanced_weight_allocation.py"
+            ]
+          },
+          {
+            "task": "신뢰도 임계값 최적화",
+            "description": "동적 신뢰도 임계값 조절 시스템 구현",
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "files_to_create": [
+              "src/regime/dynamic_confidence.py"
+            ]
+          }
+        ]
+      },
+      "hour_8": {
+        "time_range": "07:00 ~ 08:00",
+        "tasks": [
+          {
+            "task": "신뢰도 임계값 최적화",
+            "description": "동적 신뢰도 임계값 조절 시스템 구현",
+            "priority": "critical",
+            "expected_improvement": 0.4,
+            "files_to_create": [
+              "src/regime/dynamic_confidence.py"
+            ]
+          },
+          {
+            "task": "거래 신호 필터링 강화",
+            "description": "다중 조건 기반 거래 신호 필터링",
+            "priority": "critical",
+            "expected_improvement": 0.3,
+            "files_to_create": [
+              "src/trading/signal_filtering.py"
+            ]
+          }
+        ]
+      }
+    },
+    "total_files_to_create": 11,
+    "expected_total_improvement": 2.8
+  },
+  "validation_plan": {
+    "data_period": "2025-03-01 ~ 2025-08-31",
+    "validation_method": "Walk-Forward Expanding Window Cross-Validation",
+    "test_assets": [
+      "BTC",
+      "ETH",
+      "AAPL",
+      "MSFT"
+    ],
+    "validation_steps": [
+      {
+        "step": 1,
+        "description": "과거 6개월 데이터 로드 및 전처리",
+        "duration_minutes": 10,
+        "files_used": [
+          "data_6month_processed/BTC_processed.csv",
+          "data_6month_processed/ETH_processed.csv",
+          "data_6month_processed/AAPL_processed.csv",
+          "data_6month_processed/MSFT_processed.csv"
+        ]
+      },
+      {
+        "step": 2,
+        "description": "개선된 시스템으로 백테스팅 실행",
+        "duration_minutes": 20,
+        "test_script": "test_improved_system_6month.py"
+      },
+      {
+        "step": 3,
+        "description": "성과 지표 계산 및 분석",
+        "duration_minutes": 15,
+        "metrics": [
+          "sharpe_ratio",
+          "total_return",
+          "max_drawdown",
+          "win_rate"
+        ]
+      },
+      {
+        "step": 4,
+        "description": "논문 목표 대비 달성률 계산",
+        "duration_minutes": 10,
+        "target_achievement": "95%+"
+      },
+      {
+        "step": 5,
+        "description": "결과 보고서 생성",
+        "duration_minutes": 5,
+        "output_file": "results/final_6month_validation_results.json"
+      }
+    ],
+    "expected_results": {
+      "sharpe_ratio": 1.89,
+      "total_return": 0.079,
+      "max_drawdown": -0.05,
+      "win_rate": 0.65,
+      "overall_achievement": 0.95
+    },
+    "total_validation_time_minutes": 60
+  },
+  "generated_at": "2025-10-08T04:25:03.605987"
+}

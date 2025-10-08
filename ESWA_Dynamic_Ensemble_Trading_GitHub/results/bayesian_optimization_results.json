@@ -1,0 +1,2655 @@
+{
+  "timestamp": "2025-10-08T03:42:48.306939",
+  "optimization_type": "bayesian_optimization",
+  "best_params": {
+    "max_position_size": 0.25,
+    "max_drawdown_limit": 0.09,
+    "volatility_target": 0.16,
+    "confidence_threshold": 0.65,
+    "learning_rate": 0.00011736970999525803,
+    "batch_size": 256,
+    "n_epochs": 24,
+    "gamma": 0.992,
+    "gae_lambda": 0.91,
+    "clip_range": 0.2,
+    "ent_coef": 0.009674988425050116,
+    "temperature": 7.0,
+    "evaluation_period": 22,
+    "min_weight": 0.08,
+    "hidden_layers": [
+      128,
+      64
+    ],
+    "dropout": 0.25,
+    "activation": "tanh"
+  },
+  "best_score": 0.3411451496497693,
+  "n_trials": 100,
+  "optimization_history": [
+    {
+      "params": {
+        "max_position_size": 0.12000000000000001,
+        "max_drawdown_limit": 0.2,
+        "volatility_target": 0.21000000000000002,
+        "confidence_threshold": 0.75,
+        "learning_rate": 7.979118876474877e-05,
+        "batch_size": 512,
+        "n_epochs": 5,
+        "gamma": 0.9994999999999999,
+        "gae_lambda": 0.98,
+        "clip_range": 0.14,
+        "ent_coef": 0.001519934830130981,
+        "temperature": 6.0,
+        "evaluation_period": 12,
+        "min_weight": 0.060000000000000005,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.3250383549720185,
+      "timestamp": "2025-10-08T03:42:47.165450"
+    },
+    {
+      "params": {
+        "max_position_size": 0.16999999999999998,
+        "max_drawdown_limit": 0.05,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.55,
+        "learning_rate": 6.0758085133366966e-05,
+        "batch_size": 256,
+        "n_epochs": 19,
+        "gamma": 0.994,
+        "gae_lambda": 0.91,
+        "clip_range": 0.2,
+        "ent_coef": 0.0010824018381500957,
+        "temperature": 18.5,
+        "evaluation_period": 11,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.35,
+        "activation": "relu"
+      },
+      "score": 0.3311947466982298,
+      "timestamp": "2025-10-08T03:42:47.166924"
+    },
+    {
+      "params": {
+        "max_position_size": 0.060000000000000005,
+        "max_drawdown_limit": 0.08,
+        "volatility_target": 0.08,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00016019568611465226,
+        "batch_size": 256,
+        "n_epochs": 7,
+        "gamma": 0.998,
+        "gae_lambda": 0.9,
+        "clip_range": 0.3,
+        "ent_coef": 0.005918951335463648,
+        "temperature": 6.0,
+        "evaluation_period": 5,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "relu"
+      },
+      "score": 0.31779500120328597,
+      "timestamp": "2025-10-08T03:42:47.168280"
+    },
+    {
+      "params": {
+        "max_position_size": 0.11,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.21000000000000002,
+        "confidence_threshold": 0.8,
+        "learning_rate": 0.0007132805718188967,
+        "batch_size": 1024,
+        "n_epochs": 21,
+        "gamma": 0.9944999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.18,
+        "ent_coef": 0.001060276477895886,
+        "temperature": 4.5,
+        "evaluation_period": 5,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.35,
+        "activation": "elu"
+      },
+      "score": 0.3238202465870684,
+      "timestamp": "2025-10-08T03:42:47.169587"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.19,
+        "confidence_threshold": 0.9,
+        "learning_rate": 0.0005553560188802956,
+        "batch_size": 2048,
+        "n_epochs": 11,
+        "gamma": 0.991,
+        "gae_lambda": 0.92,
+        "clip_range": 0.18,
+        "ent_coef": 0.006576801979658927,
+        "temperature": 18.0,
+        "evaluation_period": 5,
+        "min_weight": 0.060000000000000005,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "swish"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.171061"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00011736970999525803,
+        "batch_size": 256,
+        "n_epochs": 24,
+        "gamma": 0.992,
+        "gae_lambda": 0.91,
+        "clip_range": 0.2,
+        "ent_coef": 0.009674988425050116,
+        "temperature": 7.0,
+        "evaluation_period": 22,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.172629"
+    },
+    {
+      "params": {
+        "max_position_size": 0.05,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.2,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00023185605052947333,
+        "batch_size": 1024,
+        "n_epochs": 24,
+        "gamma": 0.991,
+        "gae_lambda": 0.93,
+        "clip_range": 0.12000000000000001,
+        "ent_coef": 0.008408017719544834,
+        "temperature": 18.0,
+        "evaluation_period": 11,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.4,
+        "activation": "relu"
+      },
+      "score": 0.3166029411040061,
+      "timestamp": "2025-10-08T03:42:47.174064"
+    },
+    {
+      "params": {
+        "max_position_size": 0.2,
+        "max_drawdown_limit": 0.19,
+        "volatility_target": 0.22999999999999998,
+        "confidence_threshold": 0.8500000000000001,
+        "learning_rate": 0.0003421940344785258,
+        "batch_size": 512,
+        "n_epochs": 7,
+        "gamma": 0.9964999999999999,
+        "gae_lambda": 0.9,
+        "clip_range": 0.13,
+        "ent_coef": 0.003537804168911893,
+        "temperature": 15.0,
+        "evaluation_period": 21,
+        "min_weight": 0.03,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "relu"
+      },
+      "score": 0.3349416241946031,
+      "timestamp": "2025-10-08T03:42:47.175384"
+    },
+    {
+      "params": {
+        "max_position_size": 0.1,
+        "max_drawdown_limit": 0.08,
+        "volatility_target": 0.25,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.0007236845986792287,
+        "batch_size": 256,
+        "n_epochs": 9,
+        "gamma": 0.997,
+        "gae_lambda": 0.92,
+        "clip_range": 0.1,
+        "ent_coef": 0.00442050917092365,
+        "temperature": 6.0,
+        "evaluation_period": 29,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.4,
+        "activation": "relu"
+      },
+      "score": 0.3226065047079995,
+      "timestamp": "2025-10-08T03:42:47.176729"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.11,
+        "confidence_threshold": 0.75,
+        "learning_rate": 0.0008259151757269933,
+        "batch_size": 2048,
+        "n_epochs": 7,
+        "gamma": 0.995,
+        "gae_lambda": 0.98,
+        "clip_range": 0.25,
+        "ent_coef": 0.004977551257770928,
+        "temperature": 15.0,
+        "evaluation_period": 14,
+        "min_weight": 0.03,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "relu"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.178128"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.0001131732560672747,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.002234335820421817,
+        "temperature": 10.0,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.190123"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00010286517143509598,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.002201908602933436,
+        "temperature": 9.5,
+        "evaluation_period": 24,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.200773"
+    },
+    {
+      "params": {
+        "max_position_size": 0.19,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.0001423836667962244,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.002402696397973281,
+        "temperature": 10.0,
+        "evaluation_period": 24,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.33368822130366954,
+      "timestamp": "2025-10-08T03:42:47.212014"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.5,
+        "learning_rate": 5.2272572988916965e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.99,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.009708968542725897,
+        "temperature": 9.0,
+        "evaluation_period": 19,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.223968"
+    },
+    {
+      "params": {
+        "max_position_size": 0.21000000000000002,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.11,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00011718138639627789,
+        "batch_size": 128,
+        "n_epochs": 23,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.97,
+        "clip_range": 0.22,
+        "ent_coef": 0.002513442913843603,
+        "temperature": 12.0,
+        "evaluation_period": 29,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.336199484262051,
+      "timestamp": "2025-10-08T03:42:47.236164"
+    },
+    {
+      "params": {
+        "max_position_size": 0.15000000000000002,
+        "max_drawdown_limit": 0.05,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.7,
+        "learning_rate": 0.0002195473195608257,
+        "batch_size": 256,
+        "n_epochs": 13,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.27,
+        "ent_coef": 0.001738114941210251,
+        "temperature": 12.5,
+        "evaluation_period": 23,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "elu"
+      },
+      "score": 0.32871897977517023,
+      "timestamp": "2025-10-08T03:42:47.247268"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.55,
+        "learning_rate": 8.70093114862656e-05,
+        "batch_size": 256,
+        "n_epochs": 17,
+        "gamma": 0.99,
+        "gae_lambda": 0.99,
+        "clip_range": 0.21000000000000002,
+        "ent_coef": 0.0033213964518076307,
+        "temperature": 3.5,
+        "evaluation_period": 17,
+        "min_weight": 0.04,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.2,
+        "activation": "swish"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.258974"
+    },
+    {
+      "params": {
+        "max_position_size": 0.18,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.7,
+        "learning_rate": 0.00018140760876874886,
+        "batch_size": 128,
+        "n_epochs": 21,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.93,
+        "clip_range": 0.16,
+        "ent_coef": 0.001448579588369665,
+        "temperature": 8.0,
+        "evaluation_period": 26,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3324392655000904,
+      "timestamp": "2025-10-08T03:42:47.270488"
+    },
+    {
+      "params": {
+        "max_position_size": 0.16,
+        "max_drawdown_limit": 0.07,
+        "volatility_target": 0.09,
+        "confidence_threshold": 0.95,
+        "learning_rate": 0.00032933021515236773,
+        "batch_size": 2048,
+        "n_epochs": 25,
+        "gamma": 0.9954999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.23,
+        "ent_coef": 0.004001219854709452,
+        "temperature": 14.0,
+        "evaluation_period": 17,
+        "min_weight": 0.05,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3299546548160521,
+      "timestamp": "2025-10-08T03:42:47.280929"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.6,
+        "learning_rate": 7.313317506799814e-05,
+        "batch_size": 512,
+        "n_epochs": 12,
+        "gamma": 0.992,
+        "gae_lambda": 0.92,
+        "clip_range": 0.19,
+        "ent_coef": 0.0019236451449779137,
+        "temperature": 7.5,
+        "evaluation_period": 27,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.291408"
+    },
+    {
+      "params": {
+        "max_position_size": 0.13,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.8,
+        "learning_rate": 0.00011647549298810055,
+        "batch_size": 1024,
+        "n_epochs": 17,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.28,
+        "ent_coef": 0.0026913804089868437,
+        "temperature": 10.5,
+        "evaluation_period": 20,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.25,
+        "activation": "elu"
+      },
+      "score": 0.32626083992219473,
+      "timestamp": "2025-10-08T03:42:47.302300"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 9.827626161908246e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.002169644216419584,
+        "temperature": 8.5,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.313249"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00012129583122617365,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.0029106914756824357,
+        "temperature": 10.5,
+        "evaluation_period": 25,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.324633"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.65,
+        "learning_rate": 6.798172450746884e-05,
+        "batch_size": 128,
+        "n_epochs": 20,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.0019549644758206828,
+        "temperature": 13.0,
+        "evaluation_period": 22,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.335679"
+    },
+    {
+      "params": {
+        "max_position_size": 0.2,
+        "max_drawdown_limit": 0.18,
+        "volatility_target": 0.1,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00010121379202072107,
+        "batch_size": 128,
+        "n_epochs": 10,
+        "gamma": 0.994,
+        "gae_lambda": 0.93,
+        "clip_range": 0.21000000000000002,
+        "ent_coef": 0.0013675756707183292,
+        "temperature": 7.0,
+        "evaluation_period": 27,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.2,
+        "activation": "swish"
+      },
+      "score": 0.3349416241946031,
+      "timestamp": "2025-10-08T03:42:47.347055"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.7,
+        "learning_rate": 0.0002010100538593084,
+        "batch_size": 256,
+        "n_epochs": 15,
+        "gamma": 0.992,
+        "gae_lambda": 0.97,
+        "clip_range": 0.16,
+        "ent_coef": 0.0031018720825636745,
+        "temperature": 9.5,
+        "evaluation_period": 19,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.358664"
+    },
+    {
+      "params": {
+        "max_position_size": 0.08,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.000139317463685576,
+        "batch_size": 128,
+        "n_epochs": 13,
+        "gamma": 0.9954999999999999,
+        "gae_lambda": 0.91,
+        "clip_range": 0.27,
+        "ent_coef": 0.0022584513136395183,
+        "temperature": 11.0,
+        "evaluation_period": 30,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3201920802499192,
+      "timestamp": "2025-10-08T03:42:47.369816"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.07,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.0002678671076127414,
+        "batch_size": 128,
+        "n_epochs": 23,
+        "gamma": 0.991,
+        "gae_lambda": 0.97,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.0067428073084712875,
+        "temperature": 3.0,
+        "evaluation_period": 15,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.381548"
+    },
+    {
+      "params": {
+        "max_position_size": 0.21000000000000002,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.65,
+        "learning_rate": 8.897243715534362e-05,
+        "batch_size": 256,
+        "n_epochs": 18,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.22,
+        "ent_coef": 0.003880751235323125,
+        "temperature": 20.0,
+        "evaluation_period": 21,
+        "min_weight": 0.060000000000000005,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.336199484262051,
+      "timestamp": "2025-10-08T03:42:47.393362"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.2,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.75,
+        "learning_rate": 0.0001681726358581417,
+        "batch_size": 512,
+        "n_epochs": 15,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.16,
+        "ent_coef": 0.0015953468254188312,
+        "temperature": 5.0,
+        "evaluation_period": 25,
+        "min_weight": 0.05,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.404731"
+    },
+    {
+      "params": {
+        "max_position_size": 0.14,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.19,
+        "confidence_threshold": 0.6,
+        "learning_rate": 5.4340559929770896e-05,
+        "batch_size": 1024,
+        "n_epochs": 21,
+        "gamma": 0.9944999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.0012786380796661382,
+        "temperature": 7.0,
+        "evaluation_period": 27,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "swish"
+      },
+      "score": 0.32748771150084643,
+      "timestamp": "2025-10-08T03:42:47.416903"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.5,
+        "learning_rate": 5.03199080425525e-05,
+        "batch_size": 128,
+        "n_epochs": 19,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.009762664926347843,
+        "temperature": 9.0,
+        "evaluation_period": 19,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.428151"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.55,
+        "learning_rate": 6.478163174437895e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.9994999999999999,
+        "gae_lambda": 0.93,
+        "clip_range": 0.3,
+        "ent_coef": 0.008382720021980976,
+        "temperature": 9.0,
+        "evaluation_period": 18,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.439499"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.5,
+        "learning_rate": 7.13661961680434e-05,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.992,
+        "gae_lambda": 0.91,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.009982389185847476,
+        "temperature": 6.0,
+        "evaluation_period": 22,
+        "min_weight": 0.04,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.450983"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.55,
+        "learning_rate": 8.014313435440662e-05,
+        "batch_size": 128,
+        "n_epochs": 13,
+        "gamma": 0.99,
+        "gae_lambda": 0.9,
+        "clip_range": 0.28,
+        "ent_coef": 0.00791501367825769,
+        "temperature": 11.5,
+        "evaluation_period": 15,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "elu"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.463056"
+    },
+    {
+      "params": {
+        "max_position_size": 0.18,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.65,
+        "learning_rate": 5.583252646323033e-05,
+        "batch_size": 256,
+        "n_epochs": 22,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.2,
+        "ent_coef": 0.0053610148696641435,
+        "temperature": 8.0,
+        "evaluation_period": 24,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3324392655000904,
+      "timestamp": "2025-10-08T03:42:47.474890"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.18,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.0001350716350034022,
+        "batch_size": 2048,
+        "n_epochs": 25,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.92,
+        "clip_range": 0.19,
+        "ent_coef": 0.006774987591928023,
+        "temperature": 9.5,
+        "evaluation_period": 20,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.487087"
+    },
+    {
+      "params": {
+        "max_position_size": 0.21000000000000002,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.7,
+        "learning_rate": 0.00039977816937871623,
+        "batch_size": 512,
+        "n_epochs": 5,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.98,
+        "clip_range": 0.3,
+        "ent_coef": 0.007639502398976496,
+        "temperature": 7.0,
+        "evaluation_period": 7,
+        "min_weight": 0.060000000000000005,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.35,
+        "activation": "tanh"
+      },
+      "score": 0.336199484262051,
+      "timestamp": "2025-10-08T03:42:47.499360"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.22000000000000003,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00010038763468180448,
+        "batch_size": 128,
+        "n_epochs": 19,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.93,
+        "clip_range": 0.26,
+        "ent_coef": 0.005820340063375907,
+        "temperature": 4.5,
+        "evaluation_period": 22,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "elu"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.511465"
+    },
+    {
+      "params": {
+        "max_position_size": 0.2,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.19,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00016196125708928187,
+        "batch_size": 256,
+        "n_epochs": 12,
+        "gamma": 0.994,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.17,
+        "ent_coef": 0.0019197245297764467,
+        "temperature": 14.0,
+        "evaluation_period": 12,
+        "min_weight": 0.05,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "relu"
+      },
+      "score": 0.3349416241946031,
+      "timestamp": "2025-10-08T03:42:47.523678"
+    },
+    {
+      "params": {
+        "max_position_size": 0.1,
+        "max_drawdown_limit": 0.19,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.0005088903892692648,
+        "batch_size": 1024,
+        "n_epochs": 17,
+        "gamma": 0.998,
+        "gae_lambda": 0.9,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.008998172364821836,
+        "temperature": 5.5,
+        "evaluation_period": 9,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.4,
+        "activation": "swish"
+      },
+      "score": 0.3226065047079995,
+      "timestamp": "2025-10-08T03:42:47.535995"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 9.853552807532932e-05,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.0021945167574941495,
+        "temperature": 8.5,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.548036"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.65,
+        "learning_rate": 8.242440350165762e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.0011923880665145373,
+        "temperature": 8.5,
+        "evaluation_period": 24,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.560558"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.11,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00010967597979170557,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.994,
+        "gae_lambda": 0.96,
+        "clip_range": 0.22,
+        "ent_coef": 0.002134662786046155,
+        "temperature": 10.5,
+        "evaluation_period": 21,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.572875"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00014001580893032508,
+        "batch_size": 128,
+        "n_epochs": 11,
+        "gamma": 0.991,
+        "gae_lambda": 0.97,
+        "clip_range": 0.28,
+        "ent_coef": 0.0016798280459042218,
+        "temperature": 6.5,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.585087"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.7,
+        "learning_rate": 6.059146871528207e-05,
+        "batch_size": 2048,
+        "n_epochs": 18,
+        "gamma": 0.992,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.002675575715734703,
+        "temperature": 9.5,
+        "evaluation_period": 26,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "relu"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.597049"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.05,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.75,
+        "learning_rate": 8.729554293337158e-05,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.995,
+        "gae_lambda": 0.96,
+        "clip_range": 0.27,
+        "ent_coef": 0.002467655465906606,
+        "temperature": 11.5,
+        "evaluation_period": 18,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.609123"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.08,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00012454938489582515,
+        "batch_size": 256,
+        "n_epochs": 14,
+        "gamma": 0.993,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.2,
+        "ent_coef": 0.0029231945569725927,
+        "temperature": 8.5,
+        "evaluation_period": 20,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.621708"
+    },
+    {
+      "params": {
+        "max_position_size": 0.21000000000000002,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.25,
+        "confidence_threshold": 0.8,
+        "learning_rate": 0.0002545360448086261,
+        "batch_size": 128,
+        "n_epochs": 23,
+        "gamma": 0.991,
+        "gae_lambda": 0.93,
+        "clip_range": 0.21000000000000002,
+        "ent_coef": 0.00458985816106002,
+        "temperature": 12.5,
+        "evaluation_period": 16,
+        "min_weight": 0.04,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.336199484262051,
+      "timestamp": "2025-10-08T03:42:47.634257"
+    },
+    {
+      "params": {
+        "max_position_size": 0.07,
+        "max_drawdown_limit": 0.08,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.8500000000000001,
+        "learning_rate": 7.481217494161458e-05,
+        "batch_size": 256,
+        "n_epochs": 9,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.91,
+        "clip_range": 0.25,
+        "ent_coef": 0.0018312946246321275,
+        "temperature": 16.5,
+        "evaluation_period": 25,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.2,
+        "activation": "elu"
+      },
+      "score": 0.31899137757227475,
+      "timestamp": "2025-10-08T03:42:47.646424"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00018481313858776142,
+        "batch_size": 512,
+        "n_epochs": 20,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.92,
+        "clip_range": 0.18,
+        "ent_coef": 0.0010020417688026166,
+        "temperature": 7.5,
+        "evaluation_period": 19,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "relu"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.659168"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.0001227220057359864,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.003514846404532757,
+        "temperature": 10.5,
+        "evaluation_period": 25,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.671011"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00010639787692330793,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.99,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.002839391667766993,
+        "temperature": 10.5,
+        "evaluation_period": 28,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.683811"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00015550200988197373,
+        "batch_size": 128,
+        "n_epochs": 17,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.0024446961943303857,
+        "temperature": 10.0,
+        "evaluation_period": 23,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.696413"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.6,
+        "learning_rate": 9.464030623877269e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.002078735874696272,
+        "temperature": 8.0,
+        "evaluation_period": 24,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.709908"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.11,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00012079494251308918,
+        "batch_size": 128,
+        "n_epochs": 12,
+        "gamma": 0.992,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.27,
+        "ent_coef": 0.003323132928490281,
+        "temperature": 12.0,
+        "evaluation_period": 26,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.722340"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00020701558100761906,
+        "batch_size": 2048,
+        "n_epochs": 13,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.003078628037461944,
+        "temperature": 9.5,
+        "evaluation_period": 21,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "swish"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.734808"
+    },
+    {
+      "params": {
+        "max_position_size": 0.2,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00011053991346134958,
+        "batch_size": 1024,
+        "n_epochs": 19,
+        "gamma": 0.993,
+        "gae_lambda": 0.92,
+        "clip_range": 0.22,
+        "ent_coef": 0.0015085322942292366,
+        "temperature": 11.0,
+        "evaluation_period": 22,
+        "min_weight": 0.03,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.3349416241946031,
+      "timestamp": "2025-10-08T03:42:47.746596"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.0001486348328248964,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.9944999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.25,
+        "ent_coef": 0.003818672851454116,
+        "temperature": 7.5,
+        "evaluation_period": 26,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.758783"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.55,
+        "learning_rate": 9.153306106050292e-05,
+        "batch_size": 256,
+        "n_epochs": 24,
+        "gamma": 0.991,
+        "gae_lambda": 0.93,
+        "clip_range": 0.28,
+        "ent_coef": 0.0026885654567227915,
+        "temperature": 9.0,
+        "evaluation_period": 21,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.770892"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.1,
+        "confidence_threshold": 0.6,
+        "learning_rate": 6.233902420030968e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.97,
+        "clip_range": 0.11,
+        "ent_coef": 0.0023144582346991387,
+        "temperature": 13.5,
+        "evaluation_period": 28,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.783726"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.060000000000000005,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.0003344101292899216,
+        "batch_size": 128,
+        "n_epochs": 24,
+        "gamma": 0.99,
+        "gae_lambda": 0.99,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.007000044959845102,
+        "temperature": 3.0,
+        "evaluation_period": 17,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.796257"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.07,
+        "volatility_target": 0.2,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00028364048315654113,
+        "batch_size": 128,
+        "n_epochs": 23,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.98,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.008908639012041546,
+        "temperature": 5.0,
+        "evaluation_period": 12,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.808571"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00019111866298820662,
+        "batch_size": 128,
+        "n_epochs": 22,
+        "gamma": 0.991,
+        "gae_lambda": 0.97,
+        "clip_range": 0.14,
+        "ent_coef": 0.007326582879211237,
+        "temperature": 10.0,
+        "evaluation_period": 15,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.820764"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.060000000000000005,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.0002372830440218688,
+        "batch_size": 128,
+        "n_epochs": 25,
+        "gamma": 0.992,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.006182643265442655,
+        "temperature": 11.0,
+        "evaluation_period": 24,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.833537"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.08,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00028243807546757515,
+        "batch_size": 128,
+        "n_epochs": 20,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.98,
+        "clip_range": 0.27,
+        "ent_coef": 0.00872820134524582,
+        "temperature": 4.0,
+        "evaluation_period": 20,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.846235"
+    },
+    {
+      "params": {
+        "max_position_size": 0.16,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.19,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00013199076571206208,
+        "batch_size": 512,
+        "n_epochs": 22,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.21000000000000002,
+        "ent_coef": 0.009589788073837565,
+        "temperature": 8.0,
+        "evaluation_period": 14,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "elu"
+      },
+      "score": 0.3299546548160521,
+      "timestamp": "2025-10-08T03:42:47.859282"
+    },
+    {
+      "params": {
+        "max_position_size": 0.05,
+        "max_drawdown_limit": 0.07,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.0009648978789461599,
+        "batch_size": 128,
+        "n_epochs": 16,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.0019796555285577313,
+        "temperature": 6.5,
+        "evaluation_period": 25,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "swish"
+      },
+      "score": 0.3166029411040061,
+      "timestamp": "2025-10-08T03:42:47.872415"
+    },
+    {
+      "params": {
+        "max_position_size": 0.12000000000000001,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.24,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00040266981058526956,
+        "batch_size": 1024,
+        "n_epochs": 17,
+        "gamma": 0.992,
+        "gae_lambda": 0.97,
+        "clip_range": 0.22,
+        "ent_coef": 0.0017160880973323082,
+        "temperature": 12.0,
+        "evaluation_period": 22,
+        "min_weight": 0.060000000000000005,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.3250383549720185,
+      "timestamp": "2025-10-08T03:42:47.885714"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00017464232329312347,
+        "batch_size": 256,
+        "n_epochs": 13,
+        "gamma": 0.9984999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.008326492823023121,
+        "temperature": 9.0,
+        "evaluation_period": 13,
+        "min_weight": 0.06999999999999999,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.25,
+        "activation": "relu"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.898557"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.18,
+        "volatility_target": 0.2,
+        "confidence_threshold": 0.5,
+        "learning_rate": 7.105267008603604e-05,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.19,
+        "ent_coef": 0.004228937108984096,
+        "temperature": 3.0,
+        "evaluation_period": 16,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:47.911017"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.5,
+        "learning_rate": 8.101772714279602e-05,
+        "batch_size": 128,
+        "n_epochs": 17,
+        "gamma": 0.991,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.3,
+        "ent_coef": 0.009534599747132898,
+        "temperature": 10.0,
+        "evaluation_period": 19,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.923622"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.5,
+        "learning_rate": 5.0126009655877315e-05,
+        "batch_size": 128,
+        "n_epochs": 21,
+        "gamma": 0.99,
+        "gae_lambda": 0.93,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.00785693499986071,
+        "temperature": 9.0,
+        "evaluation_period": 19,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.936594"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.19,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.55,
+        "learning_rate": 5.001622940734317e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.99,
+        "clip_range": 0.25,
+        "ent_coef": 0.009849397110450015,
+        "temperature": 8.5,
+        "evaluation_period": 18,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:47.949962"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.5,
+        "learning_rate": 5.683752300641903e-05,
+        "batch_size": 128,
+        "n_epochs": 19,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.27,
+        "ent_coef": 0.00915253905193186,
+        "temperature": 6.5,
+        "evaluation_period": 23,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.963588"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.18,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.55,
+        "learning_rate": 6.468482641955542e-05,
+        "batch_size": 2048,
+        "n_epochs": 16,
+        "gamma": 0.991,
+        "gae_lambda": 0.93,
+        "clip_range": 0.28,
+        "ent_coef": 0.006486564507607542,
+        "temperature": 9.5,
+        "evaluation_period": 20,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:47.977727"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.95,
+        "learning_rate": 0.00010438056591329221,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.008432214873778723,
+        "temperature": 11.5,
+        "evaluation_period": 22,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:47.991910"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00011259378368918611,
+        "batch_size": 256,
+        "n_epochs": 24,
+        "gamma": 0.993,
+        "gae_lambda": 0.9,
+        "clip_range": 0.29000000000000004,
+        "ent_coef": 0.004967808670835982,
+        "temperature": 8.0,
+        "evaluation_period": 24,
+        "min_weight": 0.03,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.006458"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.16,
+        "volatility_target": 0.18,
+        "confidence_threshold": 0.6,
+        "learning_rate": 5.815601761371039e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.99,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.00236103220467041,
+        "temperature": 10.5,
+        "evaluation_period": 16,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.019842"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22000000000000003,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.5,
+        "learning_rate": 0.00029284056030651407,
+        "batch_size": 128,
+        "n_epochs": 23,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.3,
+        "ent_coef": 0.002598010614440611,
+        "temperature": 7.0,
+        "evaluation_period": 18,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "elu"
+      },
+      "score": 0.3374618115986399,
+      "timestamp": "2025-10-08T03:42:48.033090"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.16999999999999998,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00012977737058842543,
+        "batch_size": 512,
+        "n_epochs": 15,
+        "gamma": 0.996,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.27,
+        "ent_coef": 0.002052657138036243,
+        "temperature": 5.5,
+        "evaluation_period": 21,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.2,
+        "activation": "swish"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:48.046151"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.22000000000000003,
+        "confidence_threshold": 0.5,
+        "learning_rate": 9.908037909389131e-05,
+        "batch_size": 128,
+        "n_epochs": 20,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.91,
+        "clip_range": 0.26,
+        "ent_coef": 0.00561563970736267,
+        "temperature": 4.0,
+        "evaluation_period": 22,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.4,
+        "activation": "elu"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.059475"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.07,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.5,
+        "learning_rate": 8.653986559487653e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.93,
+        "clip_range": 0.28,
+        "ent_coef": 0.007653117520601781,
+        "temperature": 3.5,
+        "evaluation_period": 23,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.4,
+        "activation": "elu"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.072734"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.24,
+        "confidence_threshold": 0.6,
+        "learning_rate": 7.518315119140121e-05,
+        "batch_size": 128,
+        "n_epochs": 19,
+        "gamma": 0.991,
+        "gae_lambda": 0.93,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.0018327329035562868,
+        "temperature": 5.0,
+        "evaluation_period": 24,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "elu"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.085552"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.21000000000000002,
+        "confidence_threshold": 0.5,
+        "learning_rate": 9.795075209486312e-05,
+        "batch_size": 128,
+        "n_epochs": 19,
+        "gamma": 0.992,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.26,
+        "ent_coef": 0.00286373201775836,
+        "temperature": 4.0,
+        "evaluation_period": 25,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "elu"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.098584"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00015055646724332564,
+        "batch_size": 128,
+        "n_epochs": 17,
+        "gamma": 0.99,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.005935127125649011,
+        "temperature": 4.5,
+        "evaluation_period": 23,
+        "min_weight": 0.05,
+        "hidden_layers": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "relu"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.111514"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.09,
+        "volatility_target": 0.22000000000000003,
+        "confidence_threshold": 0.55,
+        "learning_rate": 6.818648843283587e-05,
+        "batch_size": 256,
+        "n_epochs": 21,
+        "gamma": 0.9904999999999999,
+        "gae_lambda": 0.93,
+        "clip_range": 0.26,
+        "ent_coef": 0.008154327675688099,
+        "temperature": 8.5,
+        "evaluation_period": 27,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.35,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:48.125143"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.1,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.7,
+        "learning_rate": 0.00011498571196253149,
+        "batch_size": 1024,
+        "n_epochs": 16,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.007187315604157304,
+        "temperature": 9.0,
+        "evaluation_period": 21,
+        "min_weight": 0.03,
+        "hidden_layers": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.2,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.138795"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.060000000000000005,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.6,
+        "learning_rate": 7.688887997418926e-05,
+        "batch_size": 128,
+        "n_epochs": 22,
+        "gamma": 0.994,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.002242834161713467,
+        "temperature": 7.5,
+        "evaluation_period": 19,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "elu"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.152566"
+    },
+    {
+      "params": {
+        "max_position_size": 0.21000000000000002,
+        "max_drawdown_limit": 0.11,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.5,
+        "learning_rate": 5.25679260783839e-05,
+        "batch_size": 128,
+        "n_epochs": 18,
+        "gamma": 0.991,
+        "gae_lambda": 0.92,
+        "clip_range": 0.28,
+        "ent_coef": 0.009160483786401033,
+        "temperature": 9.5,
+        "evaluation_period": 22,
+        "min_weight": 0.01,
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "dropout": 0.35,
+        "activation": "tanh"
+      },
+      "score": 0.336199484262051,
+      "timestamp": "2025-10-08T03:42:48.166485"
+    },
+    {
+      "params": {
+        "max_position_size": 0.18,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00039413381824612967,
+        "batch_size": 2048,
+        "n_epochs": 20,
+        "gamma": 0.992,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.21000000000000002,
+        "ent_coef": 0.0050168483620091206,
+        "temperature": 11.0,
+        "evaluation_period": 15,
+        "min_weight": 0.02,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3324392655000904,
+      "timestamp": "2025-10-08T03:42:48.179944"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 8.996349450310258e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.0021915293458014216,
+        "temperature": 8.5,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.193098"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.0001000046107890825,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.27,
+        "ent_coef": 0.0024740519380249248,
+        "temperature": 10.0,
+        "evaluation_period": 25,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:48.206380"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00012638587499930943,
+        "batch_size": 128,
+        "n_epochs": 25,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.24000000000000002,
+        "ent_coef": 0.0018190814627385154,
+        "temperature": 7.5,
+        "evaluation_period": 26,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.219780"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.13,
+        "confidence_threshold": 0.55,
+        "learning_rate": 0.00014137550180729362,
+        "batch_size": 128,
+        "n_epochs": 14,
+        "gamma": 0.993,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.25,
+        "ent_coef": 0.0021508660973363057,
+        "temperature": 10.0,
+        "evaluation_period": 24,
+        "min_weight": 0.04,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.233385"
+    },
+    {
+      "params": {
+        "max_position_size": 0.19,
+        "max_drawdown_limit": 0.13,
+        "volatility_target": 0.12,
+        "confidence_threshold": 0.9,
+        "learning_rate": 0.0001043321430213624,
+        "batch_size": 128,
+        "n_epochs": 13,
+        "gamma": 0.993,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.18,
+        "ent_coef": 0.009945104439856129,
+        "temperature": 3.5,
+        "evaluation_period": 17,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "dropout": 0.15000000000000002,
+        "activation": "tanh"
+      },
+      "score": 0.33368822130366954,
+      "timestamp": "2025-10-08T03:42:48.246388"
+    },
+    {
+      "params": {
+        "max_position_size": 0.25,
+        "max_drawdown_limit": 0.15000000000000002,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.6,
+        "learning_rate": 0.00011828447729392882,
+        "batch_size": 128,
+        "n_epochs": 17,
+        "gamma": 0.9914999999999999,
+        "gae_lambda": 0.9500000000000001,
+        "clip_range": 0.23,
+        "ent_coef": 0.0032177130033032306,
+        "temperature": 9.0,
+        "evaluation_period": 20,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.3411451496497693,
+      "timestamp": "2025-10-08T03:42:48.266648"
+    },
+    {
+      "params": {
+        "max_position_size": 0.24,
+        "max_drawdown_limit": 0.16999999999999998,
+        "volatility_target": 0.16,
+        "confidence_threshold": 0.55,
+        "learning_rate": 9.549330401744893e-05,
+        "batch_size": 256,
+        "n_epochs": 16,
+        "gamma": 0.99,
+        "gae_lambda": 0.92,
+        "clip_range": 0.26,
+        "ent_coef": 0.008703952995310195,
+        "temperature": 6.0,
+        "evaluation_period": 23,
+        "min_weight": 0.09,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "activation": "tanh"
+      },
+      "score": 0.33999990846687217,
+      "timestamp": "2025-10-08T03:42:48.280327"
+    },
+    {
+      "params": {
+        "max_position_size": 0.09,
+        "max_drawdown_limit": 0.14,
+        "volatility_target": 0.15000000000000002,
+        "confidence_threshold": 0.65,
+        "learning_rate": 0.00025754160860223433,
+        "batch_size": 128,
+        "n_epochs": 12,
+        "gamma": 0.9934999999999999,
+        "gae_lambda": 0.96,
+        "clip_range": 0.25,
+        "ent_coef": 0.006466653857577855,
+        "temperature": 5.5,
+        "evaluation_period": 21,
+        "min_weight": 0.08,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.25,
+        "activation": "tanh"
+      },
+      "score": 0.3213971192794119,
+      "timestamp": "2025-10-08T03:42:48.293219"
+    },
+    {
+      "params": {
+        "max_position_size": 0.22999999999999998,
+        "max_drawdown_limit": 0.12000000000000001,
+        "volatility_target": 0.14,
+        "confidence_threshold": 0.5,
+        "learning_rate": 8.37586230976073e-05,
+        "batch_size": 128,
+        "n_epochs": 15,
+        "gamma": 0.9924999999999999,
+        "gae_lambda": 0.9400000000000001,
+        "clip_range": 0.2,
+        "ent_coef": 0.00303244893120476,
+        "temperature": 8.5,
+        "evaluation_period": 23,
+        "min_weight": 0.09999999999999999,
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "dropout": 0.30000000000000004,
+        "activation": "swish"
+      },
+      "score": 0.3387286163004391,
+      "timestamp": "2025-10-08T03:42:48.306167"
+    }
+  ],
+  "targets": {
+    "sharpe_ratio": 1.89,
+    "max_drawdown": 0.162,
+    "total_return": 0.079
+  }
+}

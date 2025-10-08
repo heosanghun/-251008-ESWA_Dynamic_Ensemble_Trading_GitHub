@@ -1,0 +1,156 @@
+# ESWA 동적 앙상블 강화학습 거래 시스템 설정 파일
+# 마지막 업데이트: 2025-09-04
+
+# 시스템 기본 설정
+system:
+  name: "ESWA_Dynamic_Ensemble_Trading"
+  version: "1.0.0"
+  description: "Robust Dynamic Ensemble Reinforcement Learning Trading System"
+  random_seed: 42
+
+# 데이터 설정
+data:
+  # 캔들스틱 차트 설정
+  candlestick:
+    window_size: 60  # 60시간 데이터
+    resolution: [224, 224]  # 차트 이미지 해상도
+    timeframe: "1h"  # 시간봉
+    
+  # 기술적 지표 설정
+  technical:
+    indicators: ["SMA", "EMA", "RSI", "MACD", "BB", "ATR", "CCI", "STOCH", "ADX", "OBV", "VWAP", "ROC", "MFI", "Williams_R", "Parabolic_SAR"]
+    lookback_periods: [20, 50, 200]  # 이동평균 기간들
+    
+  # 감정분석 설정
+  sentiment:
+    window_size: 24  # 24시간 뉴스 데이터
+    update_frequency: "1h"  # 1시간마다 업데이트
+    
+  # 데이터 소스
+  sources:
+    price: "binance"  # 가격 데이터 소스
+    news: ["newsapi", "cointelegraph", "coindesk"]  # 뉴스 소스들
+
+# 시장 체제 분류 설정
+regime:
+  # XGBoost 분류기 설정
+  classifier:
+    model_type: "xgboost"
+    confidence_threshold: 0.6  # θ 값
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    
+  # 체제 정의
+  regimes:
+    - name: "bull_market"
+      description: "상승장"
+      color: "green"
+    - name: "bear_market" 
+      description: "하락장"
+      color: "red"
+    - name: "sideways_market"
+      description: "횡보장"
+      color: "yellow"
+
+# PPO 에이전트 설정
+agents:
+  # 기본 PPO 설정
+  ppo:
+    learning_rate: 0.0003
+    batch_size: 256
+    n_steps: 2048
+    n_epochs: 10
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.01
+    
+  # 네트워크 구조
+  network:
+    hidden_layers: [128, 64]
+    activation: "relu"
+    dropout: 0.1
+    
+  # 에이전트 풀 설정
+  pool:
+    agents_per_regime: 5  # 각 체제별 5개 에이전트
+    diversity_seeds: [42, 123, 456, 789, 999]  # 다양성을 위한 시드들
+
+# 앙상블 시스템 설정
+ensemble:
+  # 동적 가중치 설정
+  dynamic_weights:
+    evaluation_period: 30  # 30일 성과 평가
+    temperature: 10  # Softmax 온도 T
+    min_weight: 0.01  # 최소 가중치
+    
+  # 앙상블 방법
+  method: "weighted_average"  # 가중 평균 앙상블
+
+# 거래 환경 설정
+trading:
+  # 초기 자본
+  initial_capital: 10000  # $10,000
+  
+  # 거래 비용
+  fees:
+    buy: 0.0005  # 0.05%
+    sell: 0.0005  # 0.05%
+    
+  # 슬리피지
+  slippage:
+    buy: 0.0002  # 0.02%
+    sell: 0.0002  # 0.02%
+  
+  # 액션 공간
+  actions:
+    names: ["strong_buy", "buy", "hold", "sell", "strong_sell"]
+    weights: [0.3, 0.2, 0.0, 0.2, 0.3]  # 액션별 가중치
+    position_sizes: [0.3, 0.2, 0.0, 0.2, 0.3]  # 포지션 크기
+
+# 훈련 설정
+training:
+  # 에피소드 설정
+  episodes: 1000
+  max_steps_per_episode: 1000
+  
+  # 검증 설정
+  validation_split: 0.2
+  early_stopping_patience: 50
+  
+  # 모델 저장
+  save_frequency: 100  # 100 에피소드마다 저장
+  best_model_save: true
+
+# 백테스팅 설정
+backtesting:
+  # 기간 설정
+  start_date: "2021-10-12"
+  end_date: "2023-12-19"
+  
+  # 평가 지표
+  metrics: ["cumulative_return", "sharpe_ratio", "max_drawdown", "win_rate", "profit_factor"]
+  
+  # 결과 저장
+  save_results: true
+  save_plots: true
+
+# 로깅 설정
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)s | %(name)s:%(funcName)s:%(lineno)d | %(message)s"
+  file: "logs/eswa_system.log"
+  rotation: "1 day"
+  retention: "30 days"
+
+# 성능 모니터링
+monitoring:
+  # 실시간 성과 추적
+  real_time_tracking: true
+  update_frequency: "1h"
+  
+  # 알림 설정
+  alerts:
+    max_drawdown_threshold: 0.20  # 20% 손실 시 알림
+    performance_threshold: 0.10   # 10% 수익 시 알림

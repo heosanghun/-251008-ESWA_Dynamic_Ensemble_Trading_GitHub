@@ -1,0 +1,479 @@
+{
+  "timestamp": "2025-10-08T03:47:36.644121",
+  "optimization_type": "rl_parameter_tuning",
+  "best_params": {
+    "max_position_size": "0.05",
+    "max_drawdown_limit": "0.2",
+    "volatility_target": "0.18408775",
+    "confidence_threshold": "0.5",
+    "learning_rate": "0.001",
+    "temperature": "3.0",
+    "evaluation_period": "26.163168"
+  },
+  "best_score": 0.0,
+  "n_episodes": 10,
+  "optimization_results": [
+    {
+      "episode": 1,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 2,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 3,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 4,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 5,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 6,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 7,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 8,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 9,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 10,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    }
+  ],
+  "tuning_history": [
+    {
+      "episode": 1,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 2,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 3,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 4,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 5,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 6,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 7,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 8,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 9,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    {
+      "episode": 10,
+      "final_score": 0.0,
+      "best_score": 0.0,
+      "episode_reward": 0.0,
+      "final_params": {
+        "max_position_size": "0.05",
+        "max_drawdown_limit": "0.2",
+        "volatility_target": "0.18408775",
+        "confidence_threshold": "0.5",
+        "learning_rate": "0.001",
+        "temperature": "3.0",
+        "evaluation_period": "26.163168"
+      },
+      "performance": {
+        "overall_score": 0.0,
+        "sharpe_ratio": 0.0,
+        "total_return": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "win_rate": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "analysis": {
+    "underachieved_items": [
+      {
+        "metric": "sharpe_ratio",
+        "target": 1.89,
+        "current": 0.0373,
+        "achievement_rate": 0.019735449735449738,
+        "priority": "critical",
+        "improvement_needed": 1.8527
+      },
+      {
+        "metric": "total_return",
+        "target": 0.079,
+        "current": 0.0079,
+        "achievement_rate": 0.1,
+        "priority": "critical",
+        "improvement_needed": 0.0711
+      },
+      {
+        "metric": "max_drawdown",
+        "target": -0.05,
+        "current": -0.0073,
+        "achievement_rate": 0,
+        "priority": "critical",
+        "improvement_needed": 0.0427
+      },
+      {
+        "metric": "win_rate",
+        "target": 0.65,
+        "current": 0.1364,
+        "achievement_rate": 0.20984615384615382,
+        "priority": "critical",
+        "improvement_needed": 0.5136000000000001
+      }
+    ],
+    "partially_achieved_items": [],
+    "asset_issues": [
+      {
+        "asset": "BTC",
+        "performance": -0.0021,
+        "target": 0.05,
+        "priority": "high",
+        "improvement_needed": 0.0521
+      },
+      {
+        "asset": "AAPL",
+        "performance": -0.0015,
+        "target": 0.05,
+        "priority": "high",
+        "improvement_needed": 0.051500000000000004
+      },
+      {
+        "asset": "MSFT",
+        "performance": 0.0009,
+        "target": 0.05,
+        "priority": "medium",
+        "improvement_needed": 0.049100000000000005
+      }
+    ],
+    "analysis_timestamp": "2025-10-08T04:17:26.240910"
+  },
+  "development_plan": {
+    "phase1": {
+      "name": "Critical Issues Resolution",
+      "duration": "1-2주",
+      "tasks": [
+        {
+          "task": "리스크 관리 시스템 고도화",
+          "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+          "expected_improvement": 0.5,
+          "duration": "3-5일",
+          "priority": "critical"
+        },
+        {
+          "task": "변동성 기반 포지션 크기 조절",
+          "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "시장 체제 분류 정확도 향상",
+          "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+          "expected_improvement": 0.4,
+          "duration": "3-4일",
+          "priority": "critical"
+        },
+        {
+          "task": "앙상블 가중치 최적화",
+          "description": "동적 가중치 할당 알고리즘 개선",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "신뢰도 임계값 최적화",
+          "description": "동적 신뢰도 임계값 조절 시스템 구현",
+          "expected_improvement": 0.4,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "거래 신호 필터링 강화",
+          "description": "다중 조건 기반 거래 신호 필터링",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "critical"
+        }
+      ],
+      "expected_improvement": 2.2,
+      "target_metrics": [
+        "sharpe_ratio",
+        "total_return",
+        "win_rate"
+      ]
+    },
+    "phase2": {
+      "name": "High Priority Improvements",
+      "duration": "3-4주",
+      "tasks": [
+        {
+          "task": "BTC 자산별 맞춤 전략 강화",
+          "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high"
+        },
+        {
+          "task": "AAPL 자산별 맞춤 전략 강화",
+          "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high"
+        }
+      ],
+      "expected_improvement": 0.6,
+      "target_metrics": [
+        "sharpe_ratio",
+        "total_return",
+        "asset_performance"
+      ]
+    },
+    "phase3": {
+      "name": "Optimization & Validation",
+      "duration": "5-6주",
+      "tasks": [
+        {
+          "task": "고급 최적화 알고리즘 구현",
+          "description": "NSGA-II, MOEA/D 등 다중목표 최적화 알고리즘 적용",
+          "expected_improvement": 0.15,
+          "duration": "5-7일",
+          "priority": "medium"
+        },
+        {
+          "task": "실시간 모니터링 시스템 구축",
+          "description": "성과 모니터링, 이상 탐지, 자동 알림 시스템",
+          "expected_improvement": 0.1,
+          "duration": "4-5일",
+          "priority": "medium"
+        },
+        {
+          "task": "최종 성과 검증 및 튜닝",
+          "description": "6개월 확장 검증 및 미세 조정",
+          "expected_improvement": 0.1,
+          "duration": "3-4일",
+          "priority": "medium"
+        }
+      ],
+      "expected_improvement": 0.35,
+      "target_metrics": [
+        "overall_performance",
+        "system_stability"
+      ]
+    }
+  },
+  "detailed_plan": {
+    "phase1": {
+      "name": "Critical Issues Resolution",
+      "duration": "1-2주",
+      "tasks": [
+        {
+          "task": "리스크 관리 시스템 고도화",
+          "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+          "expected_improvement": 0.5,
+          "duration": "3-5일",
+          "priority": "critical"
+        },
+        {
+          "task": "변동성 기반 포지션 크기 조절",
+          "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "시장 체제 분류 정확도 향상",
+          "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+          "expected_improvement": 0.4,
+          "duration": "3-4일",
+          "priority": "critical"
+        },
+        {
+          "task": "앙상블 가중치 최적화",
+          "description": "동적 가중치 할당 알고리즘 개선",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "신뢰도 임계값 최적화",
+          "description": "동적 신뢰도 임계값 조절 시스템 구현",
+          "expected_improvement": 0.4,
+          "duration": "2-3일",
+          "priority": "critical"
+        },
+        {
+          "task": "거래 신호 필터링 강화",
+          "description": "다중 조건 기반 거래 신호 필터링",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "critical"
+        }
+      ],
+      "expected_improvement": 2.2,
+      "target_metrics": [
+        "sharpe_ratio",
+        "total_return",
+        "win_rate"
+      ],
+      "detailed_tasks": [
+        {
+          "task": "리스크 관리 시스템 고도화",
+          "description": "VaR, CVaR 기반 동적 포지션 크기 조절 시스템 구현",
+          "expected_improvement": 0.5,
+          "duration": "3-5일",
+          "priority": "critical",
+          "implementation_steps": [
+            "VaR 계산 모듈 구현 (Historical, Parametric, Monte Carlo)",
+            "CVaR 계산 및 포지션 크기 조절 로직 구현",
+            "실시간 리스크 모니터링 시스템 구축",
+            "리스크 임계값 기반 자동 포지션 조절",
+            "백테스팅 및 성과 검증"
+          ],
+          "required_files": [
+            "src/risk/var_calculator.py",
+            "src/risk/cvar_calculator.py",
+            "src/risk/dynamic_position_sizing.py",
+            "src/monitoring/risk_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "scikit-learn"
+          ]
+        },
+        {
+          "task": "변동성 기반 포지션 크기 조절",
+          "description": "실시간 변동성 모니터링 및 포지션 크기 자동 조절",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical",
+          "implementation_steps": [
+            "실시간 변동성 계산 모듈 구현 (GARCH, EWMA)",
+            "변동성 기반 포지션 크기 조절 알고리즘",
+            "변동성 임계값 설정 및 모니터링",
+            "동적 포지션 크기 조절 시스템",
+            "성과 검증 및 최적화"
+          ],
+          "required_files": [
+            "src/risk/volatility_calculator.py",
+            "src/risk/volatility_based_sizing.py",
+            "src/monitoring/volatility_monitor.py"
+          ],
+          "dependencies": [
+            "arch",
+            "numpy",
+            "pandas"
+          ]
+        },
+        {
+          "task": "시장 체제 분류 정확도 향상",
+          "description": "XGBoost 모델 재훈련 및 하이퍼파라미터 최적화",
+          "expected_improvement": 0.4,
+          "duration": "3-4일",
+          "priority": "critical",
+          "implementation_steps": [
+            "XGBoost 하이퍼파라미터 그리드 서치",
+            "교차 검증 기반 모델 선택",
+            "특징 중요도 분석 및 선택",
+            "모델 재훈련 및 성능 평가",
+            "실시간 분류 정확도 모니터링"
+          ],
+          "required_files": [
+            "src/regime/hyperparameter_tuning.py",
+            "src/regime/feature_selection.py",
+            "src/regime/model_retraining.py"
+          ],
+          "dependencies": [
+            "xgboost",
+            "optuna",
+            "scikit-learn"
+          ]
+        },
+        {
+          "task": "앙상블 가중치 최적화",
+          "description": "동적 가중치 할당 알고리즘 개선",
+          "expected_improvement": 0.3,
+          "duration": "2-3일",
+          "priority": "critical",
+          "implementation_steps": [
+            "동적 가중치 할당 알고리즘 개선",
+            "성과 기반 가중치 조절 메커니즘",
+            "온도 파라미터 동적 조절",
+            "앙상블 안정성 모니터링",
+            "성과 검증 및 최적화"
+          ],
+          "required_files": [
+            "src/ensemble/advanced_weight_allocation.py",
+            "src/ensemble/dynamic_temperature.py",
+            "src/monitoring/ensemble_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "scipy"
+          ]
+        },
+        {
+          "task": "신뢰도 임계값 최적화",
+          "description": "동적 신뢰도 임계값 조절 시스템 구현",
+          "expected_improvement": 0.4,
+          "duration": "2-3일",
+          "priority": "critical",
+          "implementation_steps": [
+            "동적 신뢰도 임계값 계산 알고리즘",
+            "시장 체제별 임계값 조절",
+            "성과 기반 임계값 최적화",
+            "실시간 임계값 모니터링",
+            "성과 검증 및 튜닝"
+          ],
+          "required_files": [
+            "src/regime/dynamic_confidence.py",
+            "src/regime/regime_specific_thresholds.py",
+            "src/monitoring/confidence_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "scipy"
+          ]
+        },
+        {
+          "task": "거래 신호 필터링 강화",
+          "description": "다중 조건 기반 거래 신호 필터링",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "critical",
+          "implementation_steps": [
+            "다중 조건 기반 신호 필터링",
+            "신호 강도 계산 및 평가",
+            "노이즈 제거 알고리즘",
+            "신호 품질 모니터링",
+            "성과 검증 및 최적화"
+          ],
+          "required_files": [
+            "src/trading/signal_filtering.py",
+            "src/trading/signal_quality.py",
+            "src/monitoring/signal_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "scipy",
+            "scikit-learn"
+          ]
+        }
+      ]
+    },
+    "phase2": {
+      "name": "High Priority Improvements",
+      "duration": "3-4주",
+      "tasks": [
+        {
+          "task": "BTC 자산별 맞춤 전략 강화",
+          "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high"
+        },
+        {
+          "task": "AAPL 자산별 맞춤 전략 강화",
+          "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high"
+        }
+      ],
+      "expected_improvement": 0.6,
+      "target_metrics": [
+        "sharpe_ratio",
+        "total_return",
+        "asset_performance"
+      ],
+      "detailed_tasks": [
+        {
+          "task": "BTC 자산별 맞춤 전략 강화",
+          "description": "BTC 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high",
+          "implementation_steps": [
+            "자산별 특성 분석 및 전략 설계",
+            "자산별 리스크 파라미터 조정",
+            "자산별 거래 빈도 최적화",
+            "자산별 성과 모니터링",
+            "성과 검증 및 전략 개선"
+          ],
+          "required_files": [
+            "src/trading/asset_specific_strategies.py",
+            "src/trading/asset_risk_parameters.py",
+            "src/monitoring/asset_performance_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "pandas",
+            "scikit-learn"
+          ]
+        },
+        {
+          "task": "AAPL 자산별 맞춤 전략 강화",
+          "description": "AAPL 특화 거래 전략 및 리스크 파라미터 조정",
+          "expected_improvement": 0.3,
+          "duration": "3-4일",
+          "priority": "high",
+          "implementation_steps": [
+            "자산별 특성 분석 및 전략 설계",
+            "자산별 리스크 파라미터 조정",
+            "자산별 거래 빈도 최적화",
+            "자산별 성과 모니터링",
+            "성과 검증 및 전략 개선"
+          ],
+          "required_files": [
+            "src/trading/asset_specific_strategies.py",
+            "src/trading/asset_risk_parameters.py",
+            "src/monitoring/asset_performance_monitor.py"
+          ],
+          "dependencies": [
+            "numpy",
+            "pandas",
+            "scikit-learn"
+          ]
+        }
+      ]
+    },
+    "phase3": {
+      "name": "Optimization & Validation",
+      "duration": "5-6주",
+      "tasks": [
+        {
+          "task": "고급 최적화 알고리즘 구현",
+          "description": "NSGA-II, MOEA/D 등 다중목표 최적화 알고리즘 적용",
+          "expected_improvement": 0.15,
+          "duration": "5-7일",
+          "priority": "medium"
+        },
+        {
+          "task": "실시간 모니터링 시스템 구축",
+          "description": "성과 모니터링, 이상 탐지, 자동 알림 시스템",
+          "expected_improvement": 0.1,
+          "duration": "4-5일",
+          "priority": "medium"
+        },
+        {
+          "task": "최종 성과 검증 및 튜닝",
+          "description": "6개월 확장 검증 및 미세 조정",
+          "expected_improvement": 0.1,
+          "duration": "3-4일",
+          "priority": "medium"
+        }
+      ],
+      "expected_improvement": 0.35,
+      "target_metrics": [
+        "overall_performance",
+        "system_stability"
+      ],
+      "detailed_tasks": [
+        {
+          "task": "고급 최적화 알고리즘 구현",
+          "description": "NSGA-II, MOEA/D 등 다중목표 최적화 알고리즘 적용",
+          "expected_improvement": 0.15,
+          "duration": "5-7일",
+          "priority": "medium",
+          "implementation_steps": [
+            "요구사항 분석 및 설계",
+            "핵심 알고리즘 구현",
+            "테스트 및 검증",
+            "성과 평가 및 최적화",
+            "문서화 및 배포"
+          ],
+          "required_files": [],
+          "dependencies": [
+            "numpy",
+            "pandas"
+          ]
+        },
+        {
+          "task": "실시간 모니터링 시스템 구축",
+          "description": "성과 모니터링, 이상 탐지, 자동 알림 시스템",
+          "expected_improvement": 0.1,
+          "duration": "4-5일",
+          "priority": "medium",
+          "implementation_steps": [
+            "요구사항 분석 및 설계",
+            "핵심 알고리즘 구현",
+            "테스트 및 검증",
+            "성과 평가 및 최적화",
+            "문서화 및 배포"
+          ],
+          "required_files": [],
+          "dependencies": [
+            "numpy",
+            "pandas"
+          ]
+        },
+        {
+          "task": "최종 성과 검증 및 튜닝",
+          "description": "6개월 확장 검증 및 미세 조정",
+          "expected_improvement": 0.1,
+          "duration": "3-4일",
+          "priority": "medium",
+          "implementation_steps": [
+            "요구사항 분석 및 설계",
+            "핵심 알고리즘 구현",
+            "테스트 및 검증",
+            "성과 평가 및 최적화",
+            "문서화 및 배포"
+          ],
+          "required_files": [],
+          "dependencies": [
+            "numpy",
+            "pandas"
+          ]
+        }
+      ]
+    }
+  },
+  "timeline": {
+    "phase1": {
+      "phase_name": "Critical Issues Resolution",
+      "start_date": "2025-10-08",
+      "end_date": "2025-10-22",
+      "duration": "1-2주",
+      "task_schedule": [
+        {
+          "task_name": "리스크 관리 시스템 고도화",
+          "start_date": "2025-10-08",
+          "end_date": "2025-10-11",
+          "duration_days": 3,
+          "priority": "critical",
+          "expected_improvement": 0.5
+        },
+        {
+          "task_name": "변동성 기반 포지션 크기 조절",
+          "start_date": "2025-10-11",
+          "end_date": "2025-10-14",
+          "duration_days": 3,
+          "priority": "critical",
+          "expected_improvement": 0.3
+        },
+        {
+          "task_name": "시장 체제 분류 정확도 향상",
+          "start_date": "2025-10-14",
+          "end_date": "2025-10-18",
+          "duration_days": 4,
+          "priority": "critical",
+          "expected_improvement": 0.4
+        },
+        {
+          "task_name": "앙상블 가중치 최적화",
+          "start_date": "2025-10-18",
+          "end_date": "2025-10-21",
+          "duration_days": 3,
+          "priority": "critical",
+          "expected_improvement": 0.3
+        },
+        {
+          "task_name": "신뢰도 임계값 최적화",
+          "start_date": "2025-10-21",
+          "end_date": "2025-10-24",
+          "duration_days": 3,
+          "priority": "critical",
+          "expected_improvement": 0.4
+        },
+        {
+          "task_name": "거래 신호 필터링 강화",
+          "start_date": "2025-10-24",
+          "end_date": "2025-10-28",
+          "duration_days": 4,
+          "priority": "critical",
+          "expected_improvement": 0.3
+        }
+      ],
+      "expected_improvement": 2.2
+    },
+    "phase2": {
+      "phase_name": "High Priority Improvements",
+      "start_date": "2025-10-22",
+      "end_date": "2025-11-19",
+      "duration": "3-4주",
+      "task_schedule": [
+        {
+          "task_name": "BTC 자산별 맞춤 전략 강화",
+          "start_date": "2025-10-22",
+          "end_date": "2025-10-26",
+          "duration_days": 4,
+          "priority": "high",
+          "expected_improvement": 0.3
+        },
+        {
+          "task_name": "AAPL 자산별 맞춤 전략 강화",
+          "start_date": "2025-10-26",
+          "end_date": "2025-10-30",
+          "duration_days": 4,
+          "priority": "high",
+          "expected_improvement": 0.3
+        }
+      ],
+      "expected_improvement": 0.6
+    },
+    "phase3": {
+      "phase_name": "Optimization & Validation",
+      "start_date": "2025-11-19",
+      "end_date": "2025-12-31",
+      "duration": "5-6주",
+      "task_schedule": [
+        {
+          "task_name": "고급 최적화 알고리즘 구현",
+          "start_date": "2025-11-19",
+          "end_date": "2025-11-26",
+          "duration_days": 7,
+          "priority": "medium",
+          "expected_improvement": 0.15
+        },
+        {
+          "task_name": "실시간 모니터링 시스템 구축",
+          "start_date": "2025-11-26",
+          "end_date": "2025-12-01",
+          "duration_days": 5,
+          "priority": "medium",
+          "expected_improvement": 0.1
+        },
+        {
+          "task_name": "최종 성과 검증 및 튜닝",
+          "start_date": "2025-12-01",
+          "end_date": "2025-12-05",
+          "duration_days": 4,
+          "priority": "medium",
+          "expected_improvement": 0.1
+        }
+      ],
+      "expected_improvement": 0.35
+    }
+  },
+  "generated_at": "2025-10-08T04:17:26.241158",
+  "summary": {
+    "total_phases": 3,
+    "total_tasks": 11,
+    "total_duration": "6주",
+    "expected_overall_improvement": 3.1500000000000004
+  }
+}

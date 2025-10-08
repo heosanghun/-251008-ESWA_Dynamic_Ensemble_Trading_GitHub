@@ -1,0 +1,255 @@
+{
+  "timestamp": "2025-10-08T03:20:19.295811",
+  "config_optimization": {
+    "max_position_size": 0.12,
+    "max_drawdown_limit": 0.1,
+    "volatility_target": 0.12,
+    "confidence_threshold": 0.7
+  },
+  "risk_management_test": {
+    "status": "success",
+    "risk_level": "low",
+    "position_sizing": 0.04811400000000001,
+    "protection_signals": {
+      "stop_loss_triggered": false,
+      "take_profit_triggered": false,
+      "emergency_stop_triggered": false,
+      "hedging_recommended": false,
+      "position_reduction_recommended": false,
+      "reason": null,
+      "recommended_action": "hold"
+    },
+    "recommendations": [
+      "위험 수준이 낮습니다. 현재 전략을 유지하세요."
+    ],
+    "risk_metrics": {
+      "volatility": 0.12,
+      "max_drawdown": -0.05,
+      "sharpe_ratio": 1.0,
+      "var_95": 0.02,
+      "var_99": 0.03
+    }
+  },
+  "performance_optimization": {
+    "BTC": {
+      "asset": "BTC",
+      "old_performance": {
+        "total_return": -0.009970799447032053,
+        "sharpe_ratio": -0.11280960287107943,
+        "max_drawdown": -0.027006278777586587,
+        "volatility": 0.024932835535968072,
+        "position_size": 0.2
+      },
+      "new_performance": {
+        "total_return": -0.005942767731217269,
+        "sharpe_ratio": -0.11280960287107954,
+        "max_drawdown": -0.016280166811137347,
+        "volatility": 0.024932835535968072,
+        "position_size": 0.12
+      },
+      "improvement": {
+        "sharpe_ratio": -1.1102230246251565e-16,
+        "max_drawdown": 0.01072611196644924,
+        "total_return": 0.004028031715814784,
+        "volatility": 0.0
+      }
+    },
+    "ETH": {
+      "asset": "ETH",
+      "old_performance": {
+        "total_return": 0.06296453214789532,
+        "sharpe_ratio": 0.5777525386971618,
+        "max_drawdown": -0.013409595025430508,
+        "volatility": 0.03048146183139618,
+        "position_size": 0.2
+      },
+      "new_performance": {
+        "total_return": 0.03739718120545654,
+        "sharpe_ratio": 0.5777525386971617,
+        "max_drawdown": -0.008063134061996413,
+        "volatility": 0.03048146183139618,
+        "position_size": 0.12
+      },
+      "improvement": {
+        "sharpe_ratio": -1.1102230246251565e-16,
+        "max_drawdown": 0.0053464609634340955,
+        "total_return": -0.025567350942438782,
+        "volatility": 0.0
+      }
+    },
+    "AAPL": {
+      "asset": "AAPL",
+      "old_performance": {
+        "total_return": -0.014562609689880213,
+        "sharpe_ratio": -0.30205268283629405,
+        "max_drawdown": -0.019643059481575315,
+        "volatility": 0.013869346324306019,
+        "position_size": 0.2
+      },
+      "new_performance": {
+        "total_return": -0.008747231346599493,
+        "sharpe_ratio": -0.302052682836294,
+        "max_drawdown": -0.011820804946935265,
+        "volatility": 0.013869346324306019,
+        "position_size": 0.12
+      },
+      "improvement": {
+        "sharpe_ratio": 5.551115123125783e-17,
+        "max_drawdown": 0.00782225453464005,
+        "total_return": 0.005815378343280719,
+        "volatility": 0.0
+      }
+    },
+    "MSFT": {
+      "asset": "MSFT",
+      "old_performance": {
+        "total_return": -0.00014046985428406433,
+        "sharpe_ratio": -0.0009999051226349085,
+        "max_drawdown": -0.025933348292287998,
+        "volatility": 0.015688909088884463,
+        "position_size": 0.2
+      },
+      "new_performance": {
+        "total_return": -6.369434262476492e-05,
+        "sharpe_ratio": -0.0009999051226347287,
+        "max_drawdown": -0.015634244197040556,
+        "volatility": 0.015688909088884463,
+        "position_size": 0.12
+      },
+      "improvement": {
+        "sharpe_ratio": 1.7976072019809664e-16,
+        "max_drawdown": 0.010299104095247442,
+        "total_return": 7.677551165929941e-05,
+        "volatility": 0.0
+      }
+    }
+  },
+  "paper_target_achievement": {
+    "paper_targets": {
+      "target_sharpe_ratio": 1.89,
+      "target_max_drawdown": 0.162,
+      "target_bear_market_return": 0.079
+    },
+    "achieved_performance": {
+      "sharpe_ratio": 0.040472586966788356,
+      "max_drawdown": -0.012949587504277394,
+      "total_return": 0.005660871946253754
+    },
+    "achievement_rates": {
+      "sharpe_ratio": 2.14140671781949,
+      "max_drawdown": 100.0,
+      "total_return": 7.165660691460447
+    },
+    "overall_achievement_rate": 36.435689136426646,
+    "performance_results": {
+      "BTC": {
+        "asset": "BTC",
+        "old_performance": {
+          "total_return": -0.009970799447032053,
+          "sharpe_ratio": -0.11280960287107943,
+          "max_drawdown": -0.027006278777586587,
+          "volatility": 0.024932835535968072,
+          "position_size": 0.2
+        },
+        "new_performance": {
+          "total_return": -0.005942767731217269,
+          "sharpe_ratio": -0.11280960287107954,
+          "max_drawdown": -0.016280166811137347,
+          "volatility": 0.024932835535968072,
+          "position_size": 0.12
+        },
+        "improvement": {
+          "sharpe_ratio": -1.1102230246251565e-16,
+          "max_drawdown": 0.01072611196644924,
+          "total_return": 0.004028031715814784,
+          "volatility": 0.0
+        }
+      },
+      "ETH": {
+        "asset": "ETH",
+        "old_performance": {
+          "total_return": 0.06296453214789532,
+          "sharpe_ratio": 0.5777525386971618,
+          "max_drawdown": -0.013409595025430508,
+          "volatility": 0.03048146183139618,
+          "position_size": 0.2
+        },
+        "new_performance": {
+          "total_return": 0.03739718120545654,
+          "sharpe_ratio": 0.5777525386971617,
+          "max_drawdown": -0.008063134061996413,
+          "volatility": 0.03048146183139618,
+          "position_size": 0.12
+        },
+        "improvement": {
+          "sharpe_ratio": -1.1102230246251565e-16,
+          "max_drawdown": 0.0053464609634340955,
+          "total_return": -0.025567350942438782,
+          "volatility": 0.0
+        }
+      },
+      "AAPL": {
+        "asset": "AAPL",
+        "old_performance": {
+          "total_return": -0.014562609689880213,
+          "sharpe_ratio": -0.30205268283629405,
+          "max_drawdown": -0.019643059481575315,
+          "volatility": 0.013869346324306019,
+          "position_size": 0.2
+        },
+        "new_performance": {
+          "total_return": -0.008747231346599493,
+          "sharpe_ratio": -0.302052682836294,
+          "max_drawdown": -0.011820804946935265,
+          "volatility": 0.013869346324306019,
+          "position_size": 0.12
+        },
+        "improvement": {
+          "sharpe_ratio": 5.551115123125783e-17,
+          "max_drawdown": 0.00782225453464005,
+          "total_return": 0.005815378343280719,
+          "volatility": 0.0
+        }
+      },
+      "MSFT": {
+        "asset": "MSFT",
+        "old_performance": {
+          "total_return": -0.00014046985428406433,
+          "sharpe_ratio": -0.0009999051226349085,
+          "max_drawdown": -0.025933348292287998,
+          "volatility": 0.015688909088884463,
+          "position_size": 0.2
+        },
+        "new_performance": {
+          "total_return": -6.369434262476492e-05,
+          "sharpe_ratio": -0.0009999051226347287,
+          "max_drawdown": -0.015634244197040556,
+          "volatility": 0.015688909088884463,
+          "position_size": 0.12
+        },
+        "improvement": {
+          "sharpe_ratio": 1.7976072019809664e-16,
+          "max_drawdown": 0.010299104095247442,
+          "total_return": 7.677551165929941e-05,
+          "volatility": 0.0
+        }
+      }
+    },
+    "recommendations": [
+      "샤프 비율 개선 필요: 현재 0.04, 목표 1.89",
+      "- 변동성 감소를 위한 포트폴리오 다각화 강화",
+      "- 거래 빈도 조절로 수수료 최적화",
+      "- 리스크 관리 시스템 강화",
+      "수익률 개선 필요: 현재 0.6%, 목표 7.9%",
+      "- 투자 전략 최적화",
+      "- 시장 체제 분류기 정확도 향상",
+      "- 앙상블 가중치 조절 최적화"
+    ]
+  },
+  "summary": {
+    "overall_achievement_rate": 36.435689136426646,
+    "sharpe_ratio_improvement": 0.040472586966788356,
+    "max_drawdown_improvement": -0.012949587504277394,
+    "total_return_improvement": 0.005660871946253754
+  }
+}
